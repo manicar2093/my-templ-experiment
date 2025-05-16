@@ -1,0 +1,208 @@
+Using ref: main
+Fetching component manifest from ref 'main'...
+Using components from templui manifest version v0.70.0 (fetched from ref main)
+Preparing to install all components...
+Processing component: accordion (from ref: main)
+Processing component: icon (from ref: main)
+ Installing files for: icon
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/icon/icon_data.go...
+   Installed cmd/web/ui/components/icon/icon_data.go
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/icon/icon_defs.go...
+   Installed cmd/web/ui/components/icon/icon_defs.go
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/icon/icon.go...
+   Installed cmd/web/ui/components/icon/icon.go
+ -> Installed dependency: icon
+ Installing files for: accordion
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/accordion/accordion.templ...
+    -> [accordion] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/accordion/accordion.templ
+Processing component: alert (from ref: main)
+ Installing files for: alert
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/alert/alert.templ...
+    -> [alert] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/alert/alert.templ
+Processing component: aspectratio (from ref: main)
+ Installing files for: aspectratio
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/aspectratio/aspect_ratio.templ...
+    -> [aspectratio] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/aspectratio/aspect_ratio.templ
+Processing component: avatar (from ref: main)
+ Installing files for: avatar
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/avatar/avatar.templ...
+    -> [avatar] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/avatar/avatar.templ
+Processing component: badge (from ref: main)
+ Installing files for: badge
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/badge/badge.templ...
+    -> [badge] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/badge/badge.templ
+Processing component: breadcrumb (from ref: main)
+ Installing files for: breadcrumb
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/breadcrumb/breadcrumb.templ...
+    -> [breadcrumb] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/breadcrumb/breadcrumb.templ
+Processing component: button (from ref: main)
+ Installing files for: button
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/button/button.templ...
+    -> [button] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/button/button.templ
+Processing component: calendar (from ref: main)
+ Installing files for: calendar
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/calendar/calendar.templ...
+    -> [calendar] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/calendar/calendar.templ
+Processing component: card (from ref: main)
+ Installing files for: card
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/card/card.templ...
+    -> [card] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/card/card.templ
+Processing component: carousel (from ref: main)
+ Installing files for: carousel
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/carousel/carousel.templ...
+    -> [carousel] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/carousel/carousel.templ
+Processing component: chart (from ref: main)
+ Installing files for: chart
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/chart/chart.templ...
+    -> [chart] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/chart/chart.templ
+Processing component: checkbox (from ref: main)
+ Installing files for: checkbox
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/checkbox/checkbox.templ...
+    -> [checkbox] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/checkbox/checkbox.templ
+Processing component: checkboxcard (from ref: main)
+ Installing files for: checkboxcard
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/checkboxcard/checkbox_card.templ...
+    -> [checkboxcard] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/checkboxcard/checkbox_card.templ
+Processing component: code (from ref: main)
+ Installing files for: code
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/code/code.templ...
+    -> [code] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/code/code.templ
+Processing component: datepicker (from ref: main)
+Processing component: popover (from ref: main)
+ Installing files for: popover
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/popover/popover.templ...
+    -> [popover] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/popover/popover.templ
+ -> Installed dependency: popover
+ Installing files for: datepicker
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/datepicker/date_picker.templ...
+    -> [datepicker] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/datepicker/date_picker.templ
+Processing component: drawer (from ref: main)
+ Installing files for: drawer
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/drawer/drawer.templ...
+    -> [drawer] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/drawer/drawer.templ
+Processing component: dropdown (from ref: main)
+ Installing files for: dropdown
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/dropdown/dropdown.templ...
+    -> [dropdown] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/dropdown/dropdown.templ
+Processing component: form (from ref: main)
+Processing component: label (from ref: main)
+ Installing files for: label
+  Info: File 'cmd/web/ui/components/label/label.templ' already up-to-date (ref: main). Skipping.
+ -> Installed dependency: label
+ Installing files for: form
+  Info: File 'cmd/web/ui/components/form/form.templ' already up-to-date (ref: main). Skipping.
+Processing component: input (from ref: main)
+ Installing files for: input
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/input/input.templ...
+    -> [input] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/input/input.templ
+Processing component: inputotp (from ref: main)
+ Installing files for: inputotp
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/inputotp/input_otp.templ...
+    -> [inputotp] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/inputotp/input_otp.templ
+Processing component: modal (from ref: main)
+ Installing files for: modal
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/modal/modal.templ...
+    -> [modal] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/modal/modal.templ
+Processing component: pagination (from ref: main)
+ Installing files for: pagination
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/pagination/pagination.templ...
+    -> [pagination] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/pagination/pagination.templ
+Processing component: progress (from ref: main)
+ Installing files for: progress
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/progress/progress.templ...
+    -> [progress] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/progress/progress.templ
+Processing component: radio (from ref: main)
+ Installing files for: radio
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/radio/radio.templ...
+    -> [radio] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/radio/radio.templ
+Processing component: radiocard (from ref: main)
+ Installing files for: radiocard
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/radiocard/radio_card.templ...
+    -> [radiocard] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/radiocard/radio_card.templ
+Processing component: rating (from ref: main)
+ Installing files for: rating
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/rating/rating.templ...
+    -> [rating] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/rating/rating.templ
+Processing component: selectbox (from ref: main)
+ Installing files for: selectbox
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/selectbox/select_box.templ...
+    -> [selectbox] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/selectbox/select_box.templ
+Processing component: separator (from ref: main)
+ Installing files for: separator
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/separator/separator.templ...
+    -> [separator] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/separator/separator.templ
+Processing component: skeleton (from ref: main)
+ Installing files for: skeleton
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/skeleton/skeleton.templ...
+    -> [skeleton] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/skeleton/skeleton.templ
+Processing component: slider (from ref: main)
+ Installing files for: slider
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/slider/slider.templ...
+    -> [slider] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/slider/slider.templ
+Processing component: spinner (from ref: main)
+ Installing files for: spinner
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/spinner/spinner.templ...
+    -> [spinner] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/spinner/spinner.templ
+Processing component: table (from ref: main)
+ Installing files for: table
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/table/table.templ...
+    -> [table] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/table/table.templ
+Processing component: tabs (from ref: main)
+ Installing files for: tabs
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/tabs/tabs.templ...
+    -> [tabs] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/tabs/tabs.templ
+Processing component: textarea (from ref: main)
+ Installing files for: textarea
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/textarea/textarea.templ...
+    -> [textarea] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/textarea/textarea.templ
+Processing component: toast (from ref: main)
+ Installing files for: toast
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/toast/toast.templ...
+    -> [toast] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/toast/toast.templ
+Processing component: toggle (from ref: main)
+ Installing files for: toggle
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/toggle/toggle.templ...
+    -> [toggle] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/toggle/toggle.templ
+Processing component: tooltip (from ref: main)
+ Installing files for: tooltip
+   Downloading https://raw.githubusercontent.com/axzilla/templui/main/internal/components/tooltip/tooltip.templ...
+    -> [tooltip] Adjusted import paths according to .templui.json config.
+   Installed cmd/web/ui/components/tooltip/tooltip.templ
+
+Installation finished.

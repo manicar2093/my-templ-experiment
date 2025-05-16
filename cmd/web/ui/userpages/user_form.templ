@@ -1,0 +1,88 @@
+package userpages
+
+import "templ-demo/internal/domain/models"
+import "templ-demo/cmd/web/ui/components/form"
+import "templ-demo/cmd/web/ui/components/label"
+import "templ-demo/cmd/web/ui/components/input"
+import "templ-demo/cmd/web/ui/components/button"
+
+type UserFormProperties struct {
+    Action string
+    Method string
+}
+
+templ UserForm(user *models.User, props UserFormProperties) {
+	<form action={templ.SafeURL(props.Action)} method="POST">
+        <input name="_method" hidden value={props.Method}/>
+	    <div class="mb-2">
+            @form.Item(form.ItemProps{}) {
+                @label.Label(label.Props{
+                    For: "email",
+                })
+                @input.Input(input.Props{
+                    ID: "email",
+                    Name: "email",
+                    Type: input.TypeEmail,
+                    Value: user.Email,
+                    HasError: false,
+                    Required: true,
+                })
+                @form.Description() {
+                    Enter your email address for notifications.
+                }
+                // @form.Message(form.MessageProps{
+                //     Variant: form.MessageVariantError,
+                // }) {
+                //     Please enter a valid email address
+                // }
+            }
+
+            @form.Item(form.ItemProps{}) {
+                @label.Label(label.Props{
+                    For: "password",
+                })
+                @input.Input(input.Props{
+                    ID: "password",
+                    Name: "password",
+                    Type: input.TypePassword,
+                    Value: user.Password,
+                    HasError: false,
+                    Required: true,
+                })
+                 @form.Description() {
+                    Enter your password.
+                }
+                // @form.Message(form.MessageProps{
+                //     Variant: form.MessageVariantError,
+                // }) {
+                //     Please enter a valid email address
+                // }
+            }
+
+            // @form.Item(form.ItemProps{}) {
+            //     @label.Label(label.Props{
+            //         For: "created_at",
+            //     })
+            //     @input.Input(input.Props{
+            //         ID: "created_at",
+            //         Name: "created_at",
+            //         Type: input.TypeDateTime,
+            //         Value: user.CreatedAt.Format(time.DateTime),
+            //         HasError: false,
+            //     })
+            //     // @form.Message(form.MessageProps{
+            //     //     Variant: form.MessageVariantError,
+            //     // }) {
+            //     //     Please enter a valid email address
+            //     // }
+            // }
+	    </div>
+
+        @button.Button(button.Props{
+            Variant: button.VariantDefault,
+            Type: button.TypeSubmit,
+        }) {
+            Guardar
+        }
+	</form>
+}

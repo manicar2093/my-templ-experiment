@@ -1,0 +1,41 @@
+package userpages
+
+import "templ-demo/internal/domain/models"
+import "templ-demo/cmd/web/ui/components/form"
+import "templ-demo/cmd/web/ui/components/label"
+import "templ-demo/cmd/web/ui/layouts"
+import "time"
+import "templ-demo/cmd/web/ui/components/button"
+
+templ ShowUser(user *models.User) {
+	@layouts.Initial() {
+		<h1 class="mb-2 text-xl">User: { user.Id.String() }</h1>
+	    @form.Item() {
+	        @label.Label() {
+	            Email
+	        }
+	        <p>{ user.Email }</p>
+	    }
+
+	    @form.Item() {
+            @label.Label() {
+                Creado el
+            }
+            <p>{ user.CreatedAt.Format(time.DateTime) }</p>
+        }
+
+		@button.Button(button.Props{
+			Variant: button.VariantLink,
+			Href: "/users",
+		}) {
+			Todos los usuarios
+		}
+
+		@button.Button(button.Props{
+			Variant: button.VariantLink,
+			Href: "/users/new",
+		}) {
+			Nuevo usuario
+		}
+	}
+}

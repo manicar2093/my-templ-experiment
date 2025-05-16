@@ -1,0 +1,14 @@
+package userpages
+
+import "templ-demo/internal/domain/models"
+import "templ-demo/cmd/web/ui/layouts"
+import "net/http"
+
+templ RegisterUserPage(user *models.User) {
+    @layouts.Initial() {
+        @UserForm(user, UserFormProperties{
+            Action: "/users",
+            Method: http.MethodPost,
+        })
+    }
+}

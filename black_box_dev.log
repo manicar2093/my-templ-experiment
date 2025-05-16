@@ -1,0 +1,2862 @@
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-14T22:53:33-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-14T22:53:33-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/init.go:29",
+  "func": "templ-demo/cmd/web/controllers.(*InitController).RegisterPersonHandler",
+  "level": "info",
+  "msg": "Person registered...",
+  "time": "2025-05-14T23:04:19-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-14T23:04:19-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/init.go:29",
+  "func": "templ-demo/cmd/web/controllers.(*InitController).RegisterPersonHandler",
+  "level": "info",
+  "msg": "Person registered...",
+  "time": "2025-05-14T23:04:39-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/init.go:29",
+  "func": "templ-demo/cmd/web/controllers.(*InitController).RegisterPersonHandler",
+  "level": "info",
+  "msg": "Person registered...",
+  "time": "2025-05-14T23:09:23-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/init.go:29",
+  "func": "templ-demo/cmd/web/controllers.(*InitController).RegisterPersonHandler",
+  "level": "info",
+  "msg": "Person registered...",
+  "time": "2025-05-14T23:13:14-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/init.go:29",
+  "func": "templ-demo/cmd/web/controllers.(*InitController).RegisterPersonHandler",
+  "level": "info",
+  "msg": "Person registered...",
+  "time": "2025-05-14T23:13:27-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T14:00:34-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T14:11:53-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T14:12:19-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T14:12:33-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T14:13:26-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T14:13:29-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T14:13:34-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/init.go:30",
+  "func": "templ-demo/cmd/web/controllers.(*InitController).RegisterPersonHandler",
+  "level": "info",
+  "msg": "Person registered...",
+  "time": "2025-05-15T14:14:18-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "required: needs to be on request",
+  "response": {
+    "errors": {
+      "Name": {
+        "required": "needs to be on request"
+      }
+    },
+    "code": 400
+  },
+  "time": "2025-05-15T14:14:18-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/init.go:30",
+  "func": "templ-demo/cmd/web/controllers.(*InitController).RegisterPersonHandler",
+  "level": "info",
+  "msg": "Person registered...",
+  "time": "2025-05-15T14:22:54-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T15:29:53-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T15:32:41-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T15:34:01-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T15:48:36-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T15:55:42-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=400, message=invalid UUID length: 41, internal=invalid UUID length: 41",
+  "response": {
+    "code": 400,
+    "error": "code=400, message=invalid UUID length: 41, internal=invalid UUID length: 41"
+  },
+  "time": "2025-05-15T15:56:04-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=400, message=invalid UUID length: 41, internal=invalid UUID length: 41",
+  "response": {
+    "code": 400,
+    "error": "code=400, message=invalid UUID length: 41, internal=invalid UUID length: 41"
+  },
+  "time": "2025-05-15T15:56:47-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=400, message=invalid UUID length: 41, internal=invalid UUID length: 41",
+  "response": {
+    "code": 400,
+    "error": "code=400, message=invalid UUID length: 41, internal=invalid UUID length: 41"
+  },
+  "time": "2025-05-15T15:57:10-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=400, message=invalid UUID length: 41, internal=invalid UUID length: 41",
+  "response": {
+    "code": 400,
+    "error": "code=400, message=invalid UUID length: 41, internal=invalid UUID length: 41"
+  },
+  "time": "2025-05-15T15:57:35-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=400, message=invalid UUID length: 41, internal=invalid UUID length: 41",
+  "response": {
+    "code": 400,
+    "error": "code=400, message=invalid UUID length: 41, internal=invalid UUID length: 41"
+  },
+  "time": "2025-05-15T15:57:39-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=400, message=invalid UUID length: 41, internal=invalid UUID length: 41",
+  "response": {
+    "code": 400,
+    "error": "code=400, message=invalid UUID length: 41, internal=invalid UUID length: 41"
+  },
+  "time": "2025-05-15T15:57:44-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T18:43:27-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T18:43:27-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T18:43:30-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T18:53:30-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T18:53:57-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T18:55:58-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T18:55:58-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T18:56:46-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T18:57:10-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:00:26-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:00:38-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:00:40-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:00:43-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:00:45-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:02:20-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:03:15-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:03:33-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:03:49-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:05:29-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:07:32-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:09:04-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:09:20-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:11:38-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:12:11-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:12:34-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:13:07-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:13:46-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:15:29-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:16:53-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:17:15-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:17:34-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:18:11-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:19:31-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:19:44-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:21:47-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:21:48-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:23:30-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:23:59-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:25:19-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:27:20-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:27:20-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:28:11-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:30:09-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/user.go:104",
+  "func": "templ-demo/cmd/web/controllers.(*UserController).GetAllPaginatedHandler",
+  "level": "info",
+  "msg": "\u0026{0 1 5 5 1 1 [{4d413f05-e95e-4387-9726-dd4e29d23604   2025-05-15 15:49:34.378 +0000 UTC}]}",
+  "time": "2025-05-15T19:34:52-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/user.go:106",
+  "func": "templ-demo/cmd/web/controllers.(*UserController).GetAllPaginatedHandler",
+  "level": "info",
+  "msg": "\u0026{0 10 5 1 1 5 [{4d413f05-e95e-4387-9726-dd4e29d23604   2025-05-15 15:49:34.378 +0000 UTC} {4f3d43de-e515-4882-8c70-4579c80fa527 patient@test.com hello 2025-05-15 15:50:53.292 +0000 UTC} {f7a605d3-33ff-4258-99d3-aecbac2c845c mani@mani.com caballeros 2025-05-15 15:55:42.392 +0000 UTC} {a30fe617-81d2-4138-95b1-513dfe46f347 mani@mani.com asdfasdfasdf 2025-05-15 15:57:10.45 +0000 UTC} {9f0c3f8b-2f98-40b8-b7e8-620d0005af4b mani@mani.com cafasdfsadf 2025-05-15 19:30:09.445 +0000 UTC}]}",
+  "time": "2025-05-15T19:36:32-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/user.go:106",
+  "func": "templ-demo/cmd/web/controllers.(*UserController).GetAllPaginatedHandler",
+  "level": "info",
+  "msg": "\u0026{0 10 5 1 1 5 [{4d413f05-e95e-4387-9726-dd4e29d23604   2025-05-15 15:49:34.378 +0000 UTC} {4f3d43de-e515-4882-8c70-4579c80fa527 patient@test.com hello 2025-05-15 15:50:53.292 +0000 UTC} {f7a605d3-33ff-4258-99d3-aecbac2c845c mani@mani.com caballeros 2025-05-15 15:55:42.392 +0000 UTC} {a30fe617-81d2-4138-95b1-513dfe46f347 mani@mani.com asdfasdfasdf 2025-05-15 15:57:10.45 +0000 UTC} {9f0c3f8b-2f98-40b8-b7e8-620d0005af4b mani@mani.com cafasdfsadf 2025-05-15 19:30:09.445 +0000 UTC}]}",
+  "time": "2025-05-15T19:36:34-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/user.go:106",
+  "func": "templ-demo/cmd/web/controllers.(*UserController).GetAllPaginatedHandler",
+  "level": "info",
+  "msg": "\u0026{0 10 6 1 1 6 [{4d413f05-e95e-4387-9726-dd4e29d23604   2025-05-15 15:49:34.378 +0000 UTC} {4f3d43de-e515-4882-8c70-4579c80fa527 patient@test.com hello 2025-05-15 15:50:53.292 +0000 UTC} {f7a605d3-33ff-4258-99d3-aecbac2c845c mani@mani.com caballeros 2025-05-15 15:55:42.392 +0000 UTC} {a30fe617-81d2-4138-95b1-513dfe46f347 mani@mani.com asdfasdfasdf 2025-05-15 15:57:10.45 +0000 UTC} {9f0c3f8b-2f98-40b8-b7e8-620d0005af4b mani@mani.com cafasdfsadf 2025-05-15 19:30:09.445 +0000 UTC} {307ad86a-0f6b-4ce7-8ffc-1e4b7681a833 other@more.com asdfasdfasdf 2025-05-15 19:37:32.448 +0000 UTC}]}",
+  "time": "2025-05-15T19:37:38-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/user.go:106",
+  "func": "templ-demo/cmd/web/controllers.(*UserController).GetAllPaginatedHandler",
+  "level": "info",
+  "msg": "\u0026{0 10 6 1 1 6 [{4d413f05-e95e-4387-9726-dd4e29d23604   2025-05-15 15:49:34.378 +0000 UTC} {4f3d43de-e515-4882-8c70-4579c80fa527 patient@test.com hello 2025-05-15 15:50:53.292 +0000 UTC} {f7a605d3-33ff-4258-99d3-aecbac2c845c mani@mani.com caballeros 2025-05-15 15:55:42.392 +0000 UTC} {a30fe617-81d2-4138-95b1-513dfe46f347 mani@mani.com asdfasdfasdf 2025-05-15 15:57:10.45 +0000 UTC} {9f0c3f8b-2f98-40b8-b7e8-620d0005af4b mani@mani.com cafasdfsadf 2025-05-15 19:30:09.445 +0000 UTC} {307ad86a-0f6b-4ce7-8ffc-1e4b7681a833 other@more.com asdfasdfasdf 2025-05-15 19:37:32.448 +0000 UTC}]}",
+  "time": "2025-05-15T19:39:32-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/user.go:106",
+  "func": "templ-demo/cmd/web/controllers.(*UserController).GetAllPaginatedHandler",
+  "level": "info",
+  "msg": "\u0026{0 10 5 1 1 5 [{4f3d43de-e515-4882-8c70-4579c80fa527 patient@test.com hello 2025-05-15 15:50:53.292 +0000 UTC} {f7a605d3-33ff-4258-99d3-aecbac2c845c mani@mani.com caballeros 2025-05-15 15:55:42.392 +0000 UTC} {a30fe617-81d2-4138-95b1-513dfe46f347 mani@mani.com asdfasdfasdf 2025-05-15 15:57:10.45 +0000 UTC} {9f0c3f8b-2f98-40b8-b7e8-620d0005af4b mani@mani.com cafasdfsadf 2025-05-15 19:30:09.445 +0000 UTC} {307ad86a-0f6b-4ce7-8ffc-1e4b7681a833 other@more.com asdfasdfasdf 2025-05-15 19:37:32.448 +0000 UTC}]}",
+  "time": "2025-05-15T19:39:35-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/user.go:106",
+  "func": "templ-demo/cmd/web/controllers.(*UserController).GetAllPaginatedHandler",
+  "level": "info",
+  "msg": "\u0026{0 10 5 1 1 5 [{4f3d43de-e515-4882-8c70-4579c80fa527 patient@test.com hello 2025-05-15 15:50:53.292 +0000 UTC} {f7a605d3-33ff-4258-99d3-aecbac2c845c mani@mani.com caballeros 2025-05-15 15:55:42.392 +0000 UTC} {a30fe617-81d2-4138-95b1-513dfe46f347 mani@mani.com asdfasdfasdf 2025-05-15 15:57:10.45 +0000 UTC} {9f0c3f8b-2f98-40b8-b7e8-620d0005af4b mani@mani.com cafasdfsadf 2025-05-15 19:30:09.445 +0000 UTC} {307ad86a-0f6b-4ce7-8ffc-1e4b7681a833 other@more.com asdfasdfasdf 2025-05-15 19:37:32.448 +0000 UTC}]}",
+  "time": "2025-05-15T19:41:19-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:41:32-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:44:25-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "record not found",
+  "response": {
+    "code": 500,
+    "error": "record not found"
+  },
+  "time": "2025-05-15T19:46:59-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:56:01-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:56:13-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:56:46-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:56:48-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:57:00-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:57:48-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:57:49-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:57:57-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:58:00-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:58:46-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:58:59-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:59:02-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:59:05-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:59:22-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:59:23-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T19:59:26-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:00:40-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:00:41-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:00:45-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:01:15-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:01:18-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:02:19-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:02:25-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:02:52-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "required: needs to be on request",
+  "response": {
+    "errors": {
+      "created_at": {
+        "required": "needs to be on request"
+      }
+    },
+    "code": 400
+  },
+  "time": "2025-05-15T20:03:00-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:03:00-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:04:38-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/user.go:67",
+  "func": "templ-demo/cmd/web/controllers.(*UserController).SaveHandler",
+  "level": "info",
+  "msg": "REACHEEEED!!!",
+  "time": "2025-05-15T20:05:54-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "required: needs to be on request",
+  "response": {
+    "errors": {
+      "created_at": {
+        "required": "needs to be on request"
+      }
+    },
+    "code": 400
+  },
+  "time": "2025-05-15T20:05:54-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:05:54-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:07:24-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:07:25-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:07:56-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:09:30-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:09:40-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/user.go:67",
+  "func": "templ-demo/cmd/web/controllers.(*UserController).SaveHandler",
+  "level": "info",
+  "msg": "REACHEEEED!!!",
+  "time": "2025-05-15T20:09:48-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "required: needs to be on request",
+  "response": {
+    "errors": {
+      "created_at": {
+        "required": "needs to be on request"
+      }
+    },
+    "code": 400
+  },
+  "time": "2025-05-15T20:09:48-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:09:48-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:10:11-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:10:17-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:10:23-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:11:10-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/user.go:67",
+  "func": "templ-demo/cmd/web/controllers.(*UserController).SaveHandler",
+  "level": "info",
+  "msg": "REACHEEEED!!!",
+  "time": "2025-05-15T20:11:14-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/user.go:68",
+  "func": "templ-demo/cmd/web/controllers.(*UserController).SaveHandler",
+  "level": "info",
+  "msg": "{Id:00000000-0000-0000-0000-000000000000 Email: Password: CreatedAt:0001-01-01 00:00:00 +0000 UTC}",
+  "time": "2025-05-15T20:11:14-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:11:14-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:12:00-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:12:24-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/user.go:67",
+  "func": "templ-demo/cmd/web/controllers.(*UserController).SaveHandler",
+  "level": "info",
+  "msg": "REACHEEEED!!!",
+  "time": "2025-05-15T20:12:34-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=400, message=parsing time \"12025-08-20T18:45\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"5-08-20T18:45\" as \"-\", internal=parsing time \"12025-08-20T18:45\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"5-08-20T18:45\" as \"-\"",
+  "response": {
+    "code": 400,
+    "error": "code=400, message=parsing time \"12025-08-20T18:45\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"5-08-20T18:45\" as \"-\", internal=parsing time \"12025-08-20T18:45\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"5-08-20T18:45\" as \"-\""
+  },
+  "time": "2025-05-15T20:12:34-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:12:34-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:13:20-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/cmd/web/controllers/user.go:67",
+  "func": "templ-demo/cmd/web/controllers.(*UserController).SaveHandler",
+  "level": "info",
+  "msg": "REACHEEEED!!!",
+  "time": "2025-05-15T20:14:11-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=400, message=parsing time \"2025-08-20T18:45\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"\" as \":\", internal=parsing time \"2025-08-20T18:45\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"\" as \":\"",
+  "response": {
+    "code": 400,
+    "error": "code=400, message=parsing time \"2025-08-20T18:45\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"\" as \":\", internal=parsing time \"2025-08-20T18:45\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"\" as \":\""
+  },
+  "time": "2025-05-15T20:14:11-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:14:11-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:14:42-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:17:11-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:17:14-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:17:15-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=400, message=parsing time \"0001-01-01T00:00\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"\" as \":\", internal=parsing time \"0001-01-01T00:00\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"\" as \":\"",
+  "response": {
+    "code": 400,
+    "error": "code=400, message=parsing time \"0001-01-01T00:00\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"\" as \":\", internal=parsing time \"0001-01-01T00:00\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"\" as \":\""
+  },
+  "time": "2025-05-15T20:17:22-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:17:22-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:17:57-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:18:02-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:20:11-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T20:20:15-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "required: needs to be on request",
+  "response": {
+    "errors": {
+      "created_at": {
+        "required": "needs to be on request"
+      }
+    },
+    "code": 400
+  },
+  "time": "2025-05-15T20:24:40-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:26:24-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:26:36-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:27:46-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:27:56-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:31:04-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:31:06-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:31:10-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:31:11-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:31:16-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:33:05-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:33:07-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:33:11-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:33:57-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:33:59-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:34:04-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:34:06-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:34:32-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:34:34-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:35:51-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:36:59-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:37:05-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:37:08-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:37:43-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:37:48-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:37:50-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:42:03-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:42:04-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:42:05-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:42:08-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:42:41-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:42:42-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:42:45-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:43:01-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:43:03-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:45:36-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:45:51-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:45:56-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:46:00-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:46:03-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:46:38-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:47:24-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:47:26-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:47:29-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:47:31-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:47:35-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:48:49-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:48:52-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:48:52-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:48:59-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:49:05-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:49:31-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:51:23-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:51:24-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:51:28-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:51:29-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:51:31-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:51:50-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:51:55-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:51:57-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:52:29-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:52:31-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:53:41-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:54:43-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:54:49-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:54:51-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:55:23-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:58:41-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:58:42-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:58:46-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:58:50-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:58:54-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T22:58:57-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T23:01:53-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T23:01:56-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T23:01:59-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T23:49:25-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T23:49:30-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T23:49:32-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T23:49:35-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-15T23:49:58-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:14:20-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:14:26-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:14:31-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:14:33-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:14:36-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "email:\n required: needs to be on request\npassword:\n required: needs to be on request",
+  "response": {
+    "errors": {
+      "email": {
+        "required": "needs to be on request"
+      },
+      "password": {
+        "required": "needs to be on request"
+      }
+    },
+    "code": 400
+  },
+  "time": "2025-05-16T00:15:28-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:21:36-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:21:43-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:22:04-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:22:55-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:23:05-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:23:10-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:23:56-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:24:15-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:26:37-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:26:50-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:29:53-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:30:10-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:31:39-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:35:15-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:35:32-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:35:38-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:36:36-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:36:46-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:36:47-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:36:50-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:37:07-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:37:16-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:45:37-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:46:33-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:48:06-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:48:14-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:48:17-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:48:18-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:48:21-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:48:23-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:48:26-06:00"
+}
+{
+  "file": "/Users/manuelcarbajal/Developer/templ-demo/core/apperrors/converter.go:34",
+  "func": "templ-demo/core/apperrors.HandlerWEcho",
+  "level": "error",
+  "msg": "code=404, message=Not Found",
+  "response": {
+    "code": 404,
+    "error": "code=404, message=Not Found"
+  },
+  "time": "2025-05-16T00:50:11-06:00"
+}

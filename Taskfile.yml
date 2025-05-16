@@ -1,0 +1,37 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+    build:
+        desc: Build your API to deploy anywhere
+        cmds:
+            - go build -o .bin/web/server cmd/web/*.go
+    fmt:
+        desc: Format all your Golang and Prisma code
+        cmds:
+            - go fmt ./...
+            - npx prisma format
+    version:
+        desc: Shows your current API version
+        cmds:
+            - cz version -p
+    dev:
+        desc: Start project with air using your .env file
+        dotenv: ['.env']
+        cmds:
+            - air
+    run:
+        desc: Start project from build
+        dotenv: ['.env']
+        deps: [build]
+        cmds:
+            - ./.bin/web/server
+
+    templ:
+        cmds:
+            - templ generate --proxy="http://localhost:8090" --open-browser=false -v
+
+    tailwind:
+        cmds:
+            - tailwindcss -i ./cmd/web/assets/css/input.css -o ./cmd/web/assets/css/output.css

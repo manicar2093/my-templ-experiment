@@ -1,0 +1,94 @@
+package userpas
+
+import "templ-demo/cmd/web/ui/components/table"
+import "github.com/manicar2093/gormpager"
+import "templ-demo/internal/domain/models"
+import "templ-demo/cmd/web/ui/components/button"
+import "fmt"
+import "time"
+
+var tableId = "data-table"
+var tableIdAsSelector = fmt.Sprintf("#data-table")
+
+templ UsersTable(page *gormpager.Page[models.User]) {
+	@table.Table(table.Props{
+		ID: tableId,
+	}) {
+		@table.Header() {
+			@table.Row() {
+				@table.Head() {
+					#
+				}
+				@table.Head() {
+					Email
+				}
+				@table.Head() {
+					Fecha de creación
+				}
+				@table.Head() {
+					Acciones
+				}
+			}
+		}
+		@table.Body() {
+			for i, user := range page.Items {
+				@table.Row() {
+					@table.Cell() {
+						{ i+1 }
+					}
+					@table.Cell() {
+						{ user.Email }
+					}
+					@table.Cell() {
+						{ user.CreatedAt.Format(time.DateTime) }
+					}
+					@table.Cell() {
+						@button.Button(button.Props{
+							Variant: button.VariantDefault,
+							Href:    fmt.Sprintf("/users/%s/edit", user.Id),
+						}) {
+							Editar
+						}
+						@button.Button(button.Props{
+							Variant:   button.VariantDestructive,
+							Type:      button.TypeSubmit,
+							HxDelete:  fmt.Sprintf("/users/%s", user.Id),
+							HxTarget:  tableIdAsSelector,
+							HxConfirm: fmt.Sprintf("Are you sure?"),
+						}) {
+							Eliminar
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+type LinkProps struct {
+	Href string
+	Confirm string
+	Method string
+}
+
+templ Link(props LinkProps) {
+	{{ id := utils.RandomID() }}
+	<a
+		id={ id }
+		href={ templ.SafeURL(props.Href) }
+		if props.Confirm != "" && props.Method != http.MethodGet {
+			 data-confirm={ props.Confirm }
+		}
+		if props.Method != "" {
+			data-method={ props.Method }
+		}
+	></a>
+}
+
+templ linkScript(id string) {
+	<script>
+		(function(){
+			setLinkConrmation(id);
+		})()
+	</script>
+}
