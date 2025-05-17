@@ -26,9 +26,14 @@ func main() {
 		dbConn       = connections.GetGormConnection(conf.DatabaseConnectionConfig)
 	)
 	logger.Config()
+
 	e.Pre(middleware.MethodOverrideWithConfig(middleware.MethodOverrideConfig{
 		Getter: middleware.MethodFromForm("_method"),
 	}))
+	e.Use(middleware.CSRFWithConfig(middleware.CSRFConfig{
+		TokenLookup: "form:X-XSRF-TOKEN",
+	}))
+
 	e.Use(middleware.Logger())
 	core.RegisterController(baseGroup, controllers.NewUserController(
 		user.NewUserRepository(dbConn),
