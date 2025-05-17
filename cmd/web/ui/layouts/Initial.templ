@@ -2,6 +2,7 @@ package layouts
 
 import "templ-demo/cmd/web/ui/components/drawer"
 import "templ-demo/cmd/web/ui/components/button"
+import "templ-demo/cmd/web/ui/components/formtag"
 
 templ Initial() {
 	<!DOCTYPE html>
@@ -34,6 +35,7 @@ templ Initial() {
 				{ children... }
 			</div>
 			<script src="/assets/js/htmx@2.0.4.min.js"></script>
+			@formtag.Script()
 		</body>
 	</html>
 }

@@ -112,12 +112,7 @@ func (c *UserController) DeleteByIdHandler(ctx echo.Context) error {
 		return err
 	}
 
-	res, err := c.userRepository.GetAllPaginated(1, 10)
-	if err != nil {
-		return err
-	}
-
-	return core.Render(ctx, http.StatusOK, userpages.UsersTable(res))
+	return ctx.Redirect(http.StatusSeeOther, "/users")
 }
 
 func (c *UserController) GetRegistrationPageHandler(ctx echo.Context) error {

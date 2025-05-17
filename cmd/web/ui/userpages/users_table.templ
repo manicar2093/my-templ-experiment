@@ -1,4 +1,4 @@
-package userpas
+package userpages
 
 import "templ-demo/cmd/web/ui/components/table"
 import "github.com/manicar2093/gormpager"
@@ -6,6 +6,8 @@ import "templ-demo/internal/domain/models"
 import "templ-demo/cmd/web/ui/components/button"
 import "fmt"
 import "time"
+import "net/http"
+import "templ-demo/cmd/web/ui/components/link"
 
 var tableId = "data-table"
 var tableIdAsSelector = fmt.Sprintf("#data-table")
@@ -37,7 +39,9 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 						{ i+1 }
 					}
 					@table.Cell() {
-						{ user.Email }
+						<a href={templ.SafeURL(fmt.Sprintf("/users/%s", user.Id))}>
+							{ user.Email }
+						</a>
 					}
 					@table.Cell() {
 						{ user.CreatedAt.Format(time.DateTime) }
@@ -49,12 +53,12 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 						}) {
 							Editar
 						}
-						@button.Button(button.Props{
-							Variant:   button.VariantDestructive,
-							Type:      button.TypeSubmit,
-							HxDelete:  fmt.Sprintf("/users/%s", user.Id),
-							HxTarget:  tableIdAsSelector,
-							HxConfirm: fmt.Sprintf("Are you sure?"),
+						@link.Link(link.LinkProps{
+							Href:    fmt.Sprintf("/users/%s", user.Id),
+							Confirm: fmt.Sprintf("Are you sure to delete %s", user.Email),
+							Method: http.MethodDelete,
+							Variant: button.VariantDestructive,
+							Class: "inline-block",
 						}) {
 							Eliminar
 						}
@@ -63,32 +67,4 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 			}
 		}
 	}
-}
-
-type LinkProps struct {
-	Href string
-	Confirm string
-	Method string
-}
-
-templ Link(props LinkProps) {
-	{{ id := utils.RandomID() }}
-	<a
-		id={ id }
-		href={ templ.SafeURL(props.Href) }
-		if props.Confirm != "" && props.Method != http.MethodGet {
-			 data-confirm={ props.Confirm }
-		}
-		if props.Method != "" {
-			data-method={ props.Method }
-		}
-	></a>
-}
-
-templ linkScript(id string) {
-	<script>
-		(function(){
-			setLinkConrmation(id);
-		})()
-	</script>
 }

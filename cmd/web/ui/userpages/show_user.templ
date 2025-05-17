@@ -6,6 +6,9 @@ import "templ-demo/cmd/web/ui/components/label"
 import "templ-demo/cmd/web/ui/layouts"
 import "time"
 import "templ-demo/cmd/web/ui/components/button"
+import "fmt"
+import "net/http"
+import "templ-demo/cmd/web/ui/components/link"
 
 templ ShowUser(user *models.User) {
 	@layouts.Initial() {
@@ -24,18 +27,28 @@ templ ShowUser(user *models.User) {
             <p>{ user.CreatedAt.Format(time.DateTime) }</p>
         }
 
-		@button.Button(button.Props{
-			Variant: button.VariantLink,
-			Href: "/users",
+		@link.Link(link.LinkProps{
+			Href:    fmt.Sprintf("/users/%s", user.Id),
+			Confirm: fmt.Sprintf("Are you sure to delete %s", user.Email),
+			Method: http.MethodDelete,
+			Variant: button.VariantDestructive,
+			Class: "inline-block",
 		}) {
-			Todos los usuarios
+			Eliminar
 		}
 
 		@button.Button(button.Props{
-			Variant: button.VariantLink,
+			Variant: button.VariantDefault,
 			Href: "/users/new",
 		}) {
 			Nuevo usuario
+		}
+
+		@button.Button(button.Props{
+			Variant: button.VariantOutline,
+			Href: "/users",
+		}) {
+			Todos los usuarios
 		}
 	}
 }
