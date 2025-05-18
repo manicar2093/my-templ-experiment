@@ -10,29 +10,30 @@ type LinkProps struct {
 	Confirm string
 	Method  string
 	Variant button.Variant
-	Class        string
+	Class   string
 }
 
 templ Link(props LinkProps) {
 	{{ id := utils.RandomID() }}
 	if props.Method == http.MethodGet {
-		<a
-			id={ id }
-			href={ templ.SafeURL(props.Href) }
-
-		>
+		@button.Button(button.Props{
+			ID:      id,
+			Href:    props.Href,
+			Variant: props.Variant,
+			Class:   props.Class,
+		}) {
 			{ children... }
-		</a>
+		}
 	} else {
 		@formtag.FormTag(formtag.FormTagProperties{
-			Id: id,
-			Action: props.Href,
-			Method: props.Method,
+			Id:      id,
+			Action:  props.Href,
+			Method:  props.Method,
 			Confirm: props.Confirm,
-			Class: props.Class,
+			Class:   props.Class,
 		}) {
 			@button.Button(button.Props{
-				Type: button.TypeSubmit,
+				Type:    button.TypeSubmit,
 				Variant: props.Variant,
 			}) {
 				{ children... }
@@ -40,4 +41,3 @@ templ Link(props LinkProps) {
 		}
 	}
 }
-

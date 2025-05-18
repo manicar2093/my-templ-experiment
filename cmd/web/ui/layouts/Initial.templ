@@ -1,12 +1,13 @@
 package layouts
 
 import "templ-demo/cmd/web/ui/components/drawer"
-import "templ-demo/cmd/web/ui/components/button"
+
 import "templ-demo/cmd/web/ui/components/formtag"
+import "templ-demo/cmd/web/ui/components/icon"
 
 templ Initial() {
 	<!DOCTYPE html>
-	<html lang="en">
+	<html lang="en" class="dark">
 		<head>
 			<meta charset="UTF-8"/>
 			<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
@@ -16,13 +17,15 @@ templ Initial() {
 		</head>
 		<body>
 			@drawer.Drawer() {
-				<div class="w-full bg-primary py-5">
-					@drawer.Trigger(drawer.TriggerProps{Class: "mb-4"}) {
-						@button.Button(button.Props{
-              Variant: button.VariantGhost,
-            }) {
-              @hamburger()
-            }
+				<div class="w-full bg-primary py-2 mb-3 shadow-md sticky top-0">
+					@drawer.Trigger(drawer.TriggerProps{
+						Class: "opacity-50 hover:opacity-100 transition-all inline-block p-2 ml-3",
+					}) {
+						<div>
+							@icon.Menu(icon.Props{
+							    Class: "text-secondary",
+							})
+						</div>
 					}
 				</div>
 				@drawer.Content(drawer.ContentProps{
@@ -41,16 +44,16 @@ templ Initial() {
 }
 
 templ SideMenu() {
-	<div class="flex max-h-lh flex-col justify-between border-e border-gray-100 bg-white">
+	<div class="flex h-full flex-col justify-between bg-background">
 		<div class="px-4 py-6">
-			<span class="grid h-10 w-32 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600">
+			<span class="grid h-10 w-32 place-content-center rounded-lg bg-background text-xs">
 				Logo
 			</span>
 			<ul class="mt-6 space-y-1">
 				<li>
 					<a
 						href="#"
-						class="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
+						class="block rounded-lg bg-primary px-4 py-2 text-sm font-medium"
 					>
 						General
 					</a>
@@ -58,7 +61,7 @@ templ SideMenu() {
 				<li>
 					<details class="group [&_summary::-webkit-details-marker]:hidden">
 						<summary
-							class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+							class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 hover:bg-primary"
 						>
 							<span class="text-sm font-medium">Teams </span>
 							<span class="shrink-0 transition duration-300 group-open:-rotate-180">
@@ -80,7 +83,7 @@ templ SideMenu() {
 							<li>
 								<a
 									href="#"
-									class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+									class="block rounded-lg px-4 py-2 text-sm font-medium hover:bg-primary"
 								>
 									Banned Users
 								</a>
@@ -88,7 +91,7 @@ templ SideMenu() {
 							<li>
 								<a
 									href="#"
-									class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+									class="block rounded-lg px-4 py-2 text-sm font-medium hover:bg-primary"
 								>
 									Calendar
 								</a>
@@ -99,7 +102,7 @@ templ SideMenu() {
 				<li>
 					<a
 						href="#"
-						class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+						class="block rounded-lg px-4 py-2 text-sm font-medium hover:bg-primary"
 					>
 						Billing
 					</a>
@@ -107,7 +110,7 @@ templ SideMenu() {
 				<li>
 					<a
 						href="#"
-						class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+						class="block rounded-lg px-4 py-2 text-sm font-medium hover:bg-primary"
 					>
 						Invoices
 					</a>
@@ -115,7 +118,7 @@ templ SideMenu() {
 				<li>
 					<details class="group [&_summary::-webkit-details-marker]:hidden">
 						<summary
-							class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+							class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 hover:bg-primary"
 						>
 							<span class="text-sm font-medium">Account </span>
 							<span class="shrink-0 transition duration-300 group-open:-rotate-180">
@@ -137,7 +140,7 @@ templ SideMenu() {
 							<li>
 								<a
 									href="#"
-									class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+									class="block rounded-lg px-4 py-2 text-sm font-medium hover:bg-primary"
 								>
 									Details
 								</a>
@@ -145,7 +148,7 @@ templ SideMenu() {
 							<li>
 								<a
 									href="#"
-									class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+									class="block rounded-lg px-4 py-2 text-sm font-medium hover:bg-primary"
 								>
 									Security
 								</a>
@@ -153,7 +156,7 @@ templ SideMenu() {
 							<li>
 								<a
 									href="#"
-									class="w-full rounded-lg px-4 py-2 [text-align:_inherit] text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+									class="w-full rounded-lg px-4 py-2 [text-align:_inherit] text-sm font-medium hover:bg-primary"
 								>
 									Logout
 								</a>
@@ -163,8 +166,8 @@ templ SideMenu() {
 				</li>
 			</ul>
 		</div>
-		<div class="sticky inset-x-0 bottom-0 border-t border-gray-100">
-			<a href="#" class="flex items-center gap-2 bg-white p-4 hover:bg-gray-50">
+		<div class="sticky inset-x-0 bottom-0 border-t">
+			<a href="#" class="flex items-center gap-2 bg-secondary p-4 hover:bg-primary">
 				<img
 					alt=""
 					src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
@@ -172,15 +175,11 @@ templ SideMenu() {
 				/>
 				<div>
 					<p class="text-xs">
-						<strong class="block font-medium">Eric Frusciante</strong>
-						<span>eric@frusciante.com </span>
+						<strong class="block font-medium">User Name</strong>
+						<span>user@mail.com </span>
 					</p>
 				</div>
 			</a>
 		</div>
 	</div>
-}
-
-templ hamburger() {
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
 }

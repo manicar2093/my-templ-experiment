@@ -20,7 +20,7 @@ tasks:
         desc: Start project with air using your .env file
         dotenv: ['.env']
         cmds:
-            - air
+            - go tool air
     run:
         desc: Start project from build
         dotenv: ['.env']
@@ -30,8 +30,8 @@ tasks:
 
     templ:
         cmds:
-            - templ generate --proxy="http://localhost:8090" --open-browser=false -v
+            - go tool templ generate --watch --proxy="http://localhost:8090" --open-browser=false -v
 
     tailwind:
         cmds:
-            - tailwindcss -i ./cmd/web/assets/css/input.css -o ./cmd/web/assets/css/output.css
+            - tailwindcss -i ./cmd/web/assets/css/input.css -o ./cmd/web/assets/css/output.css --watch

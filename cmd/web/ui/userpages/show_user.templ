@@ -13,19 +13,21 @@ import "templ-demo/cmd/web/ui/components/link"
 templ ShowUser(user *models.User) {
 	@layouts.Initial() {
 		<h1 class="mb-2 text-xl">User: { user.Id.String() }</h1>
-	    @form.Item() {
-	        @label.Label() {
-	            Email
-	        }
-	        <p>{ user.Email }</p>
-	    }
-
-	    @form.Item() {
-            @label.Label() {
-                Creado el
+		<div class="mb-2">
+            @form.Item() {
+                @label.Label() {
+                    Email
+                }
+                <p>{ user.Email }</p>
             }
-            <p>{ user.CreatedAt.Format(time.DateTime) }</p>
-        }
+
+            @form.Item() {
+                @label.Label() {
+                    Creado el
+                }
+                <p>{ user.CreatedAt.Format(time.DateTime) }</p>
+            }
+		</div>
 
 		@link.Link(link.LinkProps{
 			Href:    fmt.Sprintf("/users/%s", user.Id),

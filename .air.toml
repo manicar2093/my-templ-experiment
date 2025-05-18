@@ -3,7 +3,7 @@ tmp_dir = "tmp"
 
 [build]
 # Just plain old shell command. You could use make as well.
-cmd = "task build && task templ && task tailwind"
+cmd = "task build"
 # Binary file yields from cmd.
 bin = "./.bin/web/server"
 # Customize binary, can setup environment variables when run your app.

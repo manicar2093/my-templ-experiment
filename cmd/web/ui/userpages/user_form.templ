@@ -10,12 +10,14 @@ import "templ-demo/cmd/web/ui/components/formtag"
 type UserFormProperties struct {
     Action string
     Method string
+    Class string
 }
 
 templ UserForm(user *models.User, props UserFormProperties) {
     @formtag.FormTag(formtag.FormTagProperties{
         Action: props.Action,
         Method: props.Method,
+        Class: props.Class,
     }) {
         <div class="mb-2">
             @form.Item(form.ItemProps{}) {
@@ -85,6 +87,14 @@ templ UserForm(user *models.User, props UserFormProperties) {
             Type: button.TypeSubmit,
         }) {
             Guardar
+        }
+
+        @button.Button(button.Props{
+            Type: button.TypeSubmit,
+            Variant: button.VariantGhost,
+            Href: "/users",
+        }) {
+            Cancelar
         }
     }
 
