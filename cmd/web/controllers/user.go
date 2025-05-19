@@ -74,6 +74,8 @@ func (c *UserController) GetAllPaginatedHandler(ctx echo.Context) error {
 		return err
 	}
 
+	fmt.Printf("Here: %+v \n", res)
+
 	return core.Render(ctx, http.StatusOK, userpages.UserIndex(res))
 }
 
