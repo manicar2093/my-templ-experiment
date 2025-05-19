@@ -92,7 +92,7 @@ templ UserForm(user *models.User, props UserFormProperties) {
         @button.Button(button.Props{
             Type: button.TypeSubmit,
             Variant: button.VariantGhost,
-            Href: "/users",
+            Href: "/users?page_number=1",
         }) {
             Cancelar
         }

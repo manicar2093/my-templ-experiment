@@ -8,6 +8,7 @@ import "fmt"
 import "time"
 import "net/http"
 import "templ-demo/cmd/web/ui/components/link"
+import "templ-demo/cmd/web/ui/components/pagination"
 
 var tableId = "data-table"
 var tableIdAsSelector = fmt.Sprintf("#data-table")
@@ -18,9 +19,6 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 	}) {
 		@table.Header() {
 			@table.Row() {
-				@table.Head() {
-					#
-				}
 				@table.Head() {
 					Email
 				}
@@ -33,13 +31,10 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 			}
 		}
 		@table.Body() {
-			for i, user := range page.Items {
+			for _, user := range page.Items {
 				@table.Row() {
 					@table.Cell() {
-						{ i+1 }
-					}
-					@table.Cell() {
-						<a href={templ.SafeURL(fmt.Sprintf("/users/%s", user.Id))}>
+						<a href={ templ.SafeURL(fmt.Sprintf("/users/%s", user.Id)) }>
 							{ user.Email }
 						</a>
 					}
@@ -54,11 +49,11 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 							Editar
 						}
 						@link.Link(link.LinkProps{
-							Href:    fmt.Sprintf("/users/%s", user.Id),
+							Href:    fmt.Sprintf("/users/%s?page_number=%d", user.Id, page.CurrentPage),
 							Confirm: fmt.Sprintf("Are you sure to delete %s", user.Email),
-							Method: http.MethodDelete,
+							Method:  http.MethodDelete,
 							Variant: button.VariantDestructive,
-							Class: "inline-block",
+							Class:   "inline-block",
 						}) {
 							Eliminar
 						}
@@ -67,4 +62,66 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 			}
 		}
 	}
+	<div class="mt-4">
+		{{ p := pagination.CreatePagination(int(page.CurrentPage), int(page.TotalPages), int(page.TotalPages)) }}
+		@pagination.Pagination() {
+			@pagination.Content() {
+				@pagination.Item() {
+					@pagination.Previous(pagination.PreviousProps{
+						Href:     fmt.Sprintf("?page_number=%d", p.CurrentPage-1),
+						Disabled: !p.HasPrevious,
+						Label:    "Previous",
+					})
+				}
+				// First page with ellipsis if needed
+				if p.Pages[0] > 1 {
+					@pagination.Item() {
+						@pagination.Link(pagination.LinkProps{
+							Href: "?page_number=1",
+						}) {
+							1
+						}
+					}
+					if p.Pages[0] > 2 {
+						@pagination.Item() {
+							@pagination.Ellipsis()
+						}
+					}
+				}
+				// Visible pages
+				for _, page := range p.Pages {
+					@pagination.Item() {
+						@pagination.Link(pagination.LinkProps{
+							Href:     fmt.Sprintf("?page_number=%d", page),
+							IsActive: page == p.CurrentPage,
+						}) {
+							{ fmt.Sprint(page) }
+						}
+					}
+				}
+				// Last page with ellipsis if needed
+				if p.Pages[len(p.Pages)-1] < p.TotalPages {
+					if p.Pages[len(p.Pages)-1] < p.TotalPages-1 {
+						@pagination.Item() {
+							@pagination.Ellipsis()
+						}
+					}
+					@pagination.Item() {
+						@pagination.Link(pagination.LinkProps{
+							Href: fmt.Sprintf("?page_number=%d", p.TotalPages),
+						}) {
+							{ fmt.Sprint(p.TotalPages) }
+						}
+					}
+				}
+				@pagination.Item() {
+					@pagination.Next(pagination.NextProps{
+						Href:     fmt.Sprintf("?page_number=%d", p.CurrentPage+1),
+						Disabled: !p.HasNext,
+						Label:    "Next",
+					})
+				}
+			}
+		}
+	</div>
 }

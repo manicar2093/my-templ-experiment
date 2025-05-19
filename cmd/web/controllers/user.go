@@ -31,17 +31,6 @@ func NewUserController(userRepository *user.UserRepository) *UserController {
 func (c *UserController) SetUpRoutes(group *echo.Group) {
 	userGroup := group.Group("/users")
 
-	/*
-		GET     /clients                               DeletemeElixirWeb.ClientController :index
-		GET     /clients/:id/edit                      DeletemeElixirWeb.ClientController :edit
-		GET     /clients/new                           DeletemeElixirWeb.ClientController :new
-		GET     /clients/:id                           DeletemeElixirWeb.ClientController :show
-		POST    /clients                               DeletemeElixirWeb.ClientController :create
-		PATCH   /clients/:id                           DeletemeElixirWeb.ClientController :update
-		PUT     /clients/:id                           DeletemeElixirWeb.ClientController :update
-		DELETE  /clients/:id                           DeletemeElixirWeb.ClientController :delete
-	*/
-
 	// Show all users
 	userGroup.GET("", c.GetAllPaginatedHandler)
 	// Send page to edit a user
@@ -80,8 +69,6 @@ func (c *UserController) GetAllPaginatedHandler(ctx echo.Context) error {
 		return err
 	}
 
-	req.PageSize = 10
-
 	res, err := c.userRepository.GetAllPaginated(req.PageNumber, req.PageSize)
 	if err != nil {
 		return err
@@ -104,7 +91,10 @@ func (c *UserController) PartialUpdateByIdHandler(ctx echo.Context) error {
 }
 
 func (c *UserController) DeleteByIdHandler(ctx echo.Context) error {
-	req := commonreq.GetByIdUUID{}
+	req := struct {
+		commonreq.GetByIdUUID
+		commonreq.PageData
+	}{}
 	if err := core.BindAndValidate(ctx, &req); err != nil {
 		return err
 	}
@@ -112,7 +102,7 @@ func (c *UserController) DeleteByIdHandler(ctx echo.Context) error {
 		return err
 	}
 
-	return ctx.Redirect(http.StatusSeeOther, "/users")
+	return ctx.Redirect(http.StatusSeeOther, "/users?page_number=1")
 }
 
 func (c *UserController) GetRegistrationPageHandler(ctx echo.Context) error {

@@ -282,7 +282,7 @@ func UserForm(user *models.User, props UserFormProperties) templ.Component {
 			templ_7745c5c3_Err = button.Button(button.Props{
 				Type:    button.TypeSubmit,
 				Variant: button.VariantGhost,
-				Href:    "/users",
+				Href:    "/users?page_number=1",
 			}).Render(templ.WithChildren(ctx, templ_7745c5c3_Var10), templ_7745c5c3_Buffer)
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
