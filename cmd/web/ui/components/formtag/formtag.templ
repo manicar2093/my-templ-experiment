@@ -41,10 +41,14 @@ templ FormTag(props FormTagProperties) {
 	>
 		if props.Method != http.MethodGet {
 			<input name="_method" hidden value={ props.Method }/>
-			<input name="X-XSRF-TOKEN" hidden value={ core.GetCqrfToken(ctx) }/>
+			@CreateCqrfTokenInput()
 		}
 		{ children... }
 	</form>
+}
+
+templ CreateCqrfTokenInput() {
+    <input name="X-XSRF-TOKEN" hidden value={ core.GetEchoTemplContext(ctx).GetCqrfToken() }/>
 }
 
 var handle = templ.NewOnceHandle()

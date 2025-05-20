@@ -4,6 +4,7 @@ package controllers
 import (
 	"fmt"
 	"net/http"
+	"templ-demo/cmd/web/ui/components/toast"
 	"templ-demo/cmd/web/ui/userpages"
 
 	core "templ-demo/core"
@@ -15,7 +16,7 @@ import (
 )
 
 const (
-	ShowUserUrl = "/users/%s"
+	ShowUserRouteName = "showUser"
 )
 
 type UserController struct {
@@ -38,7 +39,7 @@ func (c *UserController) SetUpRoutes(group *echo.Group) {
 	// Sends page to registry a user
 	userGroup.GET("/new", c.GetRegistrationPageHandler)
 	// Send page to show a user
-	userGroup.GET("/:id", c.GetShowUserPageHandler)
+	userGroup.GET("/:id", c.GetShowUserPageHandler).Name = ShowUserRouteName
 	// Creates a user
 	userGroup.POST("", c.SaveHandler)
 	// Patch user
@@ -60,7 +61,13 @@ func (c *UserController) SaveHandler(ctx echo.Context) error {
 		return err
 	}
 
-	return ctx.Redirect(http.StatusSeeOther, fmt.Sprintf(ShowUserUrl, req.Id))
+	core.SetFlash(ctx, core.FlashMessage{
+		Variant: toast.VariantSuccess,
+		Message: fmt.Sprintf("%s registrado correctamente", req.Email),
+		Title:   "¡Usuario creado!",
+	})
+
+	return ctx.Redirect(http.StatusSeeOther, ctx.Echo().Reverse(ShowUserRouteName, req.Id))
 }
 
 func (c *UserController) GetAllPaginatedHandler(ctx echo.Context) error {
@@ -73,8 +80,6 @@ func (c *UserController) GetAllPaginatedHandler(ctx echo.Context) error {
 	if err != nil {
 		return err
 	}
-
-	fmt.Printf("Here: %+v \n", res)
 
 	return core.Render(ctx, http.StatusOK, userpages.UserIndex(res))
 }
@@ -89,7 +94,13 @@ func (c *UserController) PartialUpdateByIdHandler(ctx echo.Context) error {
 		return err
 	}
 
-	return ctx.Redirect(http.StatusSeeOther, fmt.Sprintf(ShowUserUrl, res.Id))
+	core.SetFlash(ctx, core.FlashMessage{
+		Variant: toast.VariantSuccess,
+		Message: "Usuario actualizado correctamente",
+		Title:   "¡Éxito!",
+	})
+
+	return ctx.Redirect(http.StatusSeeOther, ctx.Echo().Reverse(ShowUserRouteName, res.Id))
 }
 
 func (c *UserController) DeleteByIdHandler(ctx echo.Context) error {
@@ -103,6 +114,12 @@ func (c *UserController) DeleteByIdHandler(ctx echo.Context) error {
 	if err := c.userRepository.DeleteById(req.Id); err != nil {
 		return err
 	}
+
+	core.SetFlash(ctx, core.FlashMessage{
+		Variant: toast.VariantSuccess,
+		Message: "Usuario eliminado correctamente",
+		Title:   "¡Éxito!",
+	})
 
 	return ctx.Redirect(http.StatusSeeOther, "/users?page_number=1")
 }

@@ -12,6 +12,9 @@ import "templ-demo/cmd/web/ui/components/drawer"
 
 import "templ-demo/cmd/web/ui/components/formtag"
 import "templ-demo/cmd/web/ui/components/icon"
+import "templ-demo/cmd/web/ui/components/toast"
+
+import "templ-demo/core"
 
 func Initial() templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {
@@ -35,6 +38,10 @@ func Initial() templ.Component {
 		}
 		ctx = templ.ClearChildren(ctx)
 		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<!doctype html><html lang=\"en\" class=\"dark\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"><link rel=\"stylesheet\" href=\"/assets/css/output.css\"><title>My app chidita</title></head><body>")
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = showFlash().Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -170,6 +177,46 @@ func SideMenu() templ.Component {
 		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 9, "<div class=\"flex h-full flex-col justify-between bg-background\"><div class=\"px-4 py-6\"><span class=\"grid h-10 w-32 place-content-center rounded-lg bg-background text-xs\">Logo</span><ul class=\"mt-6 space-y-1\"><li><a href=\"#\" class=\"block rounded-lg bg-primary px-4 py-2 text-sm font-medium\">General</a></li><li><details class=\"group [&amp;_summary::-webkit-details-marker]:hidden\"><summary class=\"flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 hover:bg-primary\"><span class=\"text-sm font-medium\">Teams </span> <span class=\"shrink-0 transition duration-300 group-open:-rotate-180\"><svg xmlns=\"http://www.w3.org/2000/svg\" class=\"size-5\" viewBox=\"0 0 20 20\" fill=\"currentColor\"><path fill-rule=\"evenodd\" d=\"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z\" clip-rule=\"evenodd\"></path></svg></span></summary><ul class=\"mt-2 space-y-1 px-4\"><li><a href=\"#\" class=\"block rounded-lg px-4 py-2 text-sm font-medium hover:bg-primary\">Banned Users</a></li><li><a href=\"#\" class=\"block rounded-lg px-4 py-2 text-sm font-medium hover:bg-primary\">Calendar</a></li></ul></details></li><li><a href=\"#\" class=\"block rounded-lg px-4 py-2 text-sm font-medium hover:bg-primary\">Billing</a></li><li><a href=\"#\" class=\"block rounded-lg px-4 py-2 text-sm font-medium hover:bg-primary\">Invoices</a></li><li><details class=\"group [&amp;_summary::-webkit-details-marker]:hidden\"><summary class=\"flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 hover:bg-primary\"><span class=\"text-sm font-medium\">Account </span> <span class=\"shrink-0 transition duration-300 group-open:-rotate-180\"><svg xmlns=\"http://www.w3.org/2000/svg\" class=\"size-5\" viewBox=\"0 0 20 20\" fill=\"currentColor\"><path fill-rule=\"evenodd\" d=\"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z\" clip-rule=\"evenodd\"></path></svg></span></summary><ul class=\"mt-2 space-y-1 px-4\"><li><a href=\"#\" class=\"block rounded-lg px-4 py-2 text-sm font-medium hover:bg-primary\">Details</a></li><li><a href=\"#\" class=\"block rounded-lg px-4 py-2 text-sm font-medium hover:bg-primary\">Security</a></li><li><a href=\"#\" class=\"w-full rounded-lg px-4 py-2 [text-align:_inherit] text-sm font-medium hover:bg-primary\">Logout</a></li></ul></details></li></ul></div><div class=\"sticky inset-x-0 bottom-0 border-t\"><a href=\"#\" class=\"flex items-center gap-2 bg-secondary p-4 hover:bg-primary\"><img alt=\"\" src=\"https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80\" class=\"size-10 rounded-full object-cover\"><div><p class=\"text-xs\"><strong class=\"block font-medium\">User Name</strong> <span>user@mail.com </span></p></div></a></div></div>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
+		}
+		return nil
+	})
+}
+
+func showFlash() templ.Component {
+	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {
+		templ_7745c5c3_W, ctx := templ_7745c5c3_Input.Writer, templ_7745c5c3_Input.Context
+		if templ_7745c5c3_CtxErr := ctx.Err(); templ_7745c5c3_CtxErr != nil {
+			return templ_7745c5c3_CtxErr
+		}
+		templ_7745c5c3_Buffer, templ_7745c5c3_IsBuffer := templruntime.GetBuffer(templ_7745c5c3_W)
+		if !templ_7745c5c3_IsBuffer {
+			defer func() {
+				templ_7745c5c3_BufErr := templruntime.ReleaseBuffer(templ_7745c5c3_Buffer)
+				if templ_7745c5c3_Err == nil {
+					templ_7745c5c3_Err = templ_7745c5c3_BufErr
+				}
+			}()
+		}
+		ctx = templ.InitializeContext(ctx)
+		templ_7745c5c3_Var6 := templ.GetChildren(ctx)
+		if templ_7745c5c3_Var6 == nil {
+			templ_7745c5c3_Var6 = templ.NopComponent
+		}
+		ctx = templ.ClearChildren(ctx)
+		echoTemplCtx := core.GetEchoTemplContext(ctx)
+		flashes := echoTemplCtx.GetFlash()
+		for _, flash := range flashes {
+			templ_7745c5c3_Err = toast.Toast(toast.Props{
+				Icon:          true,
+				Variant:       flash.Variant,
+				Title:         flash.Title,
+				Description:   flash.Message,
+				Dismissible:   true,
+				ShowIndicator: true,
+			}).Render(ctx, templ_7745c5c3_Buffer)
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
 		}
 		return nil
 	})

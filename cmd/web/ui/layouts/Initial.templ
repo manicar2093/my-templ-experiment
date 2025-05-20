@@ -4,6 +4,9 @@ import "templ-demo/cmd/web/ui/components/drawer"
 
 import "templ-demo/cmd/web/ui/components/formtag"
 import "templ-demo/cmd/web/ui/components/icon"
+import "templ-demo/cmd/web/ui/components/toast"
+
+import "templ-demo/core"
 
 templ Initial() {
 	<!DOCTYPE html>
@@ -16,6 +19,7 @@ templ Initial() {
 			<title>My app chidita</title>
 		</head>
 		<body>
+			@showFlash()
 			@drawer.Drawer() {
 				<div class="w-full bg-primary py-2 mb-3 shadow-md sticky top-0">
 					@drawer.Trigger(drawer.TriggerProps{
@@ -23,7 +27,7 @@ templ Initial() {
 					}) {
 						<div>
 							@icon.Menu(icon.Props{
-							    Class: "text-secondary",
+								Class: "text-secondary",
 							})
 						</div>
 					}
@@ -182,4 +186,19 @@ templ SideMenu() {
 			</a>
 		</div>
 	</div>
+}
+
+templ showFlash() {
+	{{ echoTemplCtx := core.GetEchoTemplContext(ctx) }}
+	{{ flashes := echoTemplCtx.GetFlash() }}
+	for _, flash := range flashes {
+		@toast.Toast(toast.Props{
+			Icon:          true,
+			Variant:       flash.Variant,
+			Title:         flash.Title,
+			Description:   flash.Message,
+			Dismissible:   true,
+			ShowIndicator: true,
+		})
+	}
 }

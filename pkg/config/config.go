@@ -2,11 +2,12 @@
 package config
 
 import (
-    "templ-demo/core"
-    "templ-demo/core/connections"
+	"templ-demo/core"
+	"templ-demo/core/connections"
 )
 
 type Config struct {
-    core.Config
-    connections.DatabaseConnectionConfig
+	core.Config
+	core.SessionSecretKeyConfig
+	connections.DatabaseConnectionConfig
 }

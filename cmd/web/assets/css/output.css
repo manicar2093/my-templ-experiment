@@ -957,9 +957,6 @@
   .bg-primary {
     background-color: var(--primary);
   }
-  .bg-primary-foreground {
-    background-color: var(--primary-foreground);
-  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }

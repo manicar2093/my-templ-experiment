@@ -33,12 +33,15 @@ func main() {
 	e.Use(middleware.CSRFWithConfig(middleware.CSRFConfig{
 		TokenLookup: "form:X-XSRF-TOKEN",
 	}))
+	e.Use(core.SessionSecretKeyMiddleware(conf.SessionSecretKeyConfig))
 
 	e.Use(middleware.Logger())
 	core.RegisterController(baseGroup, controllers.NewUserController(
 		user.NewUserRepository(dbConn),
 	))
-	echoroutesview.RegisterRoutesViewer(e)
+	if err := echoroutesview.RegisterRoutesViewer(e); err != nil {
+		panic(err)
+	}
 	e.Static("/assets", "./cmd/web/assets")
 
 	e.HTTPErrorHandler = apperrors.HandlerWEcho
