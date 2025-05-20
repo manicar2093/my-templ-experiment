@@ -1117,7 +1117,7 @@
     white-space: nowrap;
   }
   .text-accent-foreground {
-    color: var(---accent-foreground);
+    color: var(--accent-foreground);
   }
   .text-background {
     color: var(--background);
@@ -1627,7 +1627,7 @@
   .hover\:text-accent-foreground {
     &:hover {
       @media (hover: hover) {
-        color: var(---accent-foreground);
+        color: var(--accent-foreground);
       }
     }
   }
@@ -1659,7 +1659,7 @@
   }
   .focus\:text-accent-foreground {
     &:focus {
-      color: var(---accent-foreground);
+      color: var(--accent-foreground);
     }
   }
   .focus\:ring-1 {
