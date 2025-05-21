@@ -7,7 +7,6 @@ import (
 
 	"github.com/go-faker/faker/v4"
 	"github.com/google/uuid"
-	"github.com/gookit/validate"
 	"github.com/manicar2093/goption"
 
 	. "github.com/onsi/ginkgo/v2"
@@ -40,7 +39,7 @@ var _ = Describe("Gookitvalidator", func() {
 			got := api.ValidateStruct(&expectedDataToValidate)
 
 			Expect(got).ToNot(BeNil())
-			Expect(got.(*validator.ValidationError).Errors.(validate.Errors)).To(HaveLen(3))
+			Expect(got.(*validator.ValidationError).Errors).To(HaveLen(3))
 			Expect(got.(apperrors.HandleableError).StatusCode()).To(Equal(http.StatusBadRequest))
 		})
 
@@ -75,7 +74,7 @@ var _ = Describe("Gookitvalidator", func() {
 				got := api.ValidateStruct(&expectedDataToValidate)
 
 				err := got.(*validator.ValidationError)
-				errMap := err.Errors.(validate.Errors)
+				errMap := err.Errors
 				Expect(errMap["name"]["isUUID"]).To(ContainSubstring(expectedSubstring))
 				Expect(errMap["last_name"]["uuid"]).To(ContainSubstring(expectedSubstring))
 			})
@@ -93,7 +92,7 @@ var _ = Describe("Gookitvalidator", func() {
 				got := api.ValidateStruct(&expectedDataToValidate)
 
 				err := got.(*validator.ValidationError)
-				errMap := err.Errors.(validate.Errors)
+				errMap := err.Errors
 				Expect(errMap["name"]["required"]).To(ContainSubstring(expectedSubstring))
 			})
 		})
@@ -107,7 +106,7 @@ var _ = Describe("Gookitvalidator", func() {
 			got := api.ValidateStruct(&expectedDataToValidate)
 
 			err := got.(*validator.ValidationError)
-			errMap := err.Errors.(validate.Errors)
+			errMap := err.Errors
 			Expect(errMap["an_id"]["required_uuid"]).To(ContainSubstring("needs to be on request"))
 		})
 	})

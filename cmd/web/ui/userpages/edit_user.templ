@@ -4,12 +4,16 @@ import "templ-demo/internal/domain/models"
 import "templ-demo/cmd/web/ui/layouts"
 import "net/http"
 import "fmt"
+import "github.com/gookit/validate"
 
-templ EditUserPage(user *models.User) {
-    @layouts.Initial() {
-        @UserForm(user, UserFormProperties{
-            Action: fmt.Sprintf("/users/%s", user.Id) ,
-            Method: http.MethodPut,
-        })
-    }
+templ EditUserPage(user *models.User, errors validate.Errors) {
+	@layouts.Initial() {
+		@UserForm(
+			user,
+			errors,
+			UserFormProperties{
+				Action: fmt.Sprintf("/users/%s", user.Id),
+				Method: http.MethodPut,
+			})
+	}
 }

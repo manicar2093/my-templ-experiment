@@ -3,9 +3,12 @@ package controllers
 
 import (
 	"fmt"
+	"github.com/gookit/validate"
+	"github.com/pkg/errors"
 	"net/http"
 	"templ-demo/cmd/web/ui/components/toast"
 	"templ-demo/cmd/web/ui/userpages"
+	"templ-demo/core/validator"
 
 	core "templ-demo/core"
 	commonreq "templ-demo/core/commonreq"
@@ -54,6 +57,14 @@ func (c *UserController) SetUpRoutes(group *echo.Group) {
 func (c *UserController) SaveHandler(ctx echo.Context) error {
 	var req = models.User{}
 	if err := core.BindAndValidate(ctx, &req); err != nil {
+		var asValidationErr *validator.ValidationError
+		if errors.As(err, &asValidationErr) {
+			core.SetFlash(ctx, core.FlashMessage{
+				Variant: toast.VariantError,
+				Message: "Hay algunos datos que no están llenos correctamente",
+			})
+			return core.Render(ctx, http.StatusBadRequest, userpages.RegisterUserPage(&req, asValidationErr.Errors))
+		}
 		return err
 	}
 
@@ -125,7 +136,7 @@ func (c *UserController) DeleteByIdHandler(ctx echo.Context) error {
 }
 
 func (c *UserController) GetRegistrationPageHandler(ctx echo.Context) error {
-	return core.Render(ctx, http.StatusOK, userpages.RegisterUserPage(&models.User{}))
+	return core.Render(ctx, http.StatusOK, userpages.RegisterUserPage(&models.User{}, nil))
 }
 
 func (c *UserController) GetShowUserPageHandler(ctx echo.Context) error {
@@ -151,5 +162,5 @@ func (c *UserController) GetEditionHandler(ctx echo.Context) error {
 	if err != nil {
 		return err
 	}
-	return core.Render(ctx, http.StatusOK, userpages.EditUserPage(res))
+	return core.Render(ctx, http.StatusOK, userpages.EditUserPage(res, validate.Errors{}))
 }
