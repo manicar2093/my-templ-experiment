@@ -5,7 +5,7 @@ import (
 	"encoding/gob"
 	"github.com/gorilla/sessions"
 	"github.com/sirupsen/logrus"
-	"templ-demo/cmd/web/ui/components/toast"
+	"templ-demo/cmd/service/ui/components/toast"
 	"time"
 
 	"github.com/a-h/templ"

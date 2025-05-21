@@ -1,0 +1,18 @@
+package userpages
+
+import "templ-demo/internal/domain/models"
+import "github.com/manicar2093/gormpager"
+import "templ-demo/cmd/service/ui/layouts"
+import "templ-demo/cmd/service/ui/components/button"
+
+templ UserIndex(page *gormpager.Page[models.User]) {
+	@layouts.Initial() {
+		@UsersTable(page)
+		@button.Button(button.Props{
+			Variant: button.VariantLink,
+			Href: "/app/users/new",
+		}) {
+			Crear usuario
+		}
+	}
+}

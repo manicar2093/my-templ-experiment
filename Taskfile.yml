@@ -6,7 +6,7 @@ tasks:
     build:
         desc: Build your API to deploy anywhere
         cmds:
-            - go build -o .bin/web/server cmd/web/*.go
+            - go build -o .bin/service/server cmd/service/*.go
     fmt:
         desc: Format all your Golang and Prisma code
         cmds:
@@ -26,7 +26,7 @@ tasks:
         dotenv: ['.env']
         deps: [build]
         cmds:
-            - ./.bin/web/server
+            - ./.bin/service/server
 
     templ:
         cmds:
@@ -34,4 +34,4 @@ tasks:
 
     tailwind:
         cmds:
-            - tailwindcss -i ./cmd/web/assets/css/input.css -o ./cmd/web/assets/css/output.css
+            - tailwindcss -i ./cmd/service/sources/css/input.css -o ./cmd/service/assets/css/styles.css

@@ -1,0 +1,97 @@
+package userpages
+
+import "templ-demo/internal/domain/models"
+import "templ-demo/cmd/service/ui/components/form"
+import "templ-demo/cmd/service/ui/components/label"
+import "templ-demo/cmd/service/ui/components/input"
+import "templ-demo/cmd/service/ui/components/button"
+import "templ-demo/cmd/service/ui/components/formtag"
+import "github.com/gookit/validate"
+
+type UserFormProperties struct {
+	Action string
+	Method string
+	Class  string
+}
+
+templ UserForm(user *models.User, errors validate.Errors, props UserFormProperties) {
+	@formtag.FormTag(formtag.FormTagProperties{
+		Action: props.Action,
+		Method: props.Method,
+		Class:  props.Class,
+	}) {
+		<div class="mb-2">
+		    {{ emailKey := "email" }}
+			{{ hasEmailErrors := errors.HasField(emailKey) }}
+			@form.Item(form.ItemProps{}) {
+				@label.Label(label.Props{
+					For: emailKey,
+				}) {
+					Email
+				}
+				@input.Input(input.Props{
+					ID:       emailKey,
+					Name:     emailKey,
+					Type:     input.TypeEmail,
+					Value:    user.Email,
+					HasError: hasEmailErrors,
+					Required: true,
+				})
+				@form.Description() {
+					Enter your email address for notifications.
+				}
+				if hasEmailErrors {
+					for _,value := range errors.Field(emailKey) {
+						@form.Message(form.MessageProps{
+							Variant: form.MessageVariantError,
+						}) {
+							{ value }
+						}
+					}
+				}
+			}
+			{{ passwordKey := "password" }}
+			{{ hasPasswordErrors := errors.HasField(passwordKey) }}
+			@form.Item(form.ItemProps{}) {
+				@label.Label(label.Props{
+					For: passwordKey,
+				}) {
+					Password
+				}
+				@input.Input(input.Props{
+					ID:       passwordKey,
+					Name:     passwordKey,
+					Type:     input.TypeText,
+					Value:    user.Password,
+					HasError: hasPasswordErrors,
+					Required: true,
+				})
+				@form.Description() {
+					Enter your password.
+				}
+				if hasPasswordErrors {
+					for _,value := range errors.Field(passwordKey) {
+						@form.Message(form.MessageProps{
+							Variant: form.MessageVariantError,
+						}) {
+							{ value }
+						}
+					}
+				}
+			}
+		</div>
+		@button.Button(button.Props{
+			Variant: button.VariantDefault,
+			Type:    button.TypeSubmit,
+		}) {
+			Guardar
+		}
+		@button.Button(button.Props{
+			Type:    button.TypeSubmit,
+			Variant: button.VariantGhost,
+			Href:    "/app/users?page_number=1",
+		}) {
+			Cancelar
+		}
+	}
+}

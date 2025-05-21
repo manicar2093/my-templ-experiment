@@ -4,11 +4,11 @@ package generators
 import "github.com/go-viper/mapstructure/v2"
 
 type testingI interface {
-    Fatal(args ...any)
+	Fatal(args ...any)
 }
 
 func decode(t testingI, args map[string]any, holder any) {
-    if err := mapstructure.Decode(args, &holder); err != nil {
-        t.Fatal(err)
-    }
+	if err := mapstructure.Decode(args, &holder); err != nil {
+		t.Fatal(err)
+	}
 }

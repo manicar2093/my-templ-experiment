@@ -1,0 +1,18 @@
+package userpages
+
+import "templ-demo/internal/domain/models"
+import "templ-demo/cmd/service/ui/layouts"
+import "net/http"
+import "github.com/gookit/validate"
+
+templ RegisterUserPage(user *models.User, errors validate.Errors) {
+	@layouts.Initial() {
+		@UserForm(
+			user,
+			errors,
+			UserFormProperties{
+				Action: "/app/users",
+				Method: http.MethodPost,
+			})
+	}
+}

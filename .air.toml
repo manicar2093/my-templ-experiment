@@ -7,7 +7,7 @@ pre_cmd = ["task templ && task tailwind"]
 # Just plain old shell command. You could use make as well.
 cmd = "task build"
 # Binary file yields from cmd.
-bin = "./.bin/web/server"
+bin = "./.bin/service/server"
 # Customize binary, can setup environment variables when run your app.
 full_bin = ""
 # Watch these filename extensions.
