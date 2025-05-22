@@ -12,6 +12,7 @@ import "templ-demo/internal/domain/models"
 import "github.com/manicar2093/gormpager"
 import "templ-demo/cmd/service/ui/layouts"
 import "templ-demo/cmd/service/ui/components/button"
+import "github.com/invopop/ctxi18n/i18n"
 
 func UserIndex(page *gormpager.Page[models.User]) templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {
@@ -66,7 +67,12 @@ func UserIndex(page *gormpager.Page[models.User]) templ.Component {
 					}()
 				}
 				ctx = templ.InitializeContext(ctx)
-				templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "Crear usuario")
+				var templ_7745c5c3_Var4 string
+				templ_7745c5c3_Var4, templ_7745c5c3_Err = templ.JoinStringErrs(i18n.T(ctx, "create_new"))
+				if templ_7745c5c3_Err != nil {
+					return templ.Error{Err: templ_7745c5c3_Err, FileName: `cmd/service/controllers/userpages/index.templ`, Line: 16, Col: 33}
+				}
+				_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var4))
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}

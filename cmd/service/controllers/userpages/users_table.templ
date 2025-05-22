@@ -11,6 +11,7 @@ import (
 	"templ-demo/cmd/service/ui/components/table"
 	"templ-demo/internal/domain/models"
 	"time"
+	"github.com/invopop/ctxi18n/i18n"
 )
 
 var tableId = "data-table"
@@ -26,10 +27,10 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 					Email
 				}
 				@table.Head() {
-					Fecha de creación
+					Created at
 				}
 				@table.Head() {
-					Acciones
+					{ i18n.T(ctx, "actions") }
 				}
 			}
 		}
@@ -50,7 +51,7 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 								Variant: button.VariantDefault,
 								Href:    fmt.Sprintf("/app/users/%s/edit", user.Id),
 							}) {
-								Editar
+								{ i18n.T(ctx, "edit") }
 							}
 							@link.Link(link.LinkProps{
 								Href:    fmt.Sprintf("/app/users/%s?page_number=%d", user.Id, page.CurrentPage),
@@ -59,7 +60,7 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 								Variant: button.VariantDestructive,
 								Class:   "inline-block",
 							}) {
-								Eliminar
+								{ i18n.T(ctx, "delete") }
 							}
 						}
 					}

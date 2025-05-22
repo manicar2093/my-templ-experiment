@@ -1,0 +1,8 @@
+es:
+  create_new: "Crear nuevo"
+  show_all: "Ver todos"
+  save: "Guardar"
+  cancel: "Cancelar"
+  edit: "Editar"
+  delete: "Eliminar"
+  actions: "Acciones"

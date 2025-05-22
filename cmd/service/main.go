@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"templ-demo/cmd/service/controllers"
+	"templ-demo/cmd/service/translations"
 	"templ-demo/core"
 	"templ-demo/core/apperrors"
 	"templ-demo/core/connections"
@@ -33,6 +34,9 @@ func main() {
 	e.Pre(middleware.MethodOverrideWithConfig(middleware.MethodOverrideConfig{
 		Getter: middleware.MethodFromForm("_method"),
 	}))
+
+	e.Use(core.I18nMiddleware(translations.Embed, "en"))
+
 	webBaseGroup.Static("/assets", "./cmd/service/assets")
 	webBaseGroup.Use(middleware.CSRFWithConfig(middleware.CSRFConfig{
 		TokenLookup: "form:X-XSRF-TOKEN",

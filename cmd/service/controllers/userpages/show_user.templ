@@ -9,6 +9,7 @@ import "templ-demo/cmd/service/ui/components/button"
 import "fmt"
 import "net/http"
 import "templ-demo/core/coretpls/link"
+import "github.com/invopop/ctxi18n/i18n"
 
 templ ShowUser(user *models.User) {
 	@layouts.Initial() {
@@ -23,7 +24,7 @@ templ ShowUser(user *models.User) {
 
             @form.Item() {
                 @label.Label() {
-                    Creado el
+                    CreatedAt
                 }
                 <p>{ user.CreatedAt.Format(time.DateTime) }</p>
             }
@@ -43,14 +44,14 @@ templ ShowUser(user *models.User) {
 			Variant: button.VariantDefault,
 			Href: "/app/users/new",
 		}) {
-			Nuevo usuario
+			 { i18n.T(ctx, "create_new") }
 		}
 
 		@button.Button(button.Props{
 			Variant: button.VariantOutline,
 			Href: "/app/users?page_number=1",
 		}) {
-			Todos los usuarios
+		     { i18n.T(ctx, "show_all") }
 		}
 	}
 }

@@ -7,6 +7,7 @@ import "templ-demo/cmd/service/ui/components/input"
 import "templ-demo/cmd/service/ui/components/button"
 import "templ-demo/core/coretpls/formtag"
 import "github.com/gookit/validate"
+import "github.com/invopop/ctxi18n/i18n"
 
 type UserFormProperties struct {
 	Action string
@@ -84,14 +85,14 @@ templ UserForm(user *models.User, errors validate.Errors, props UserFormProperti
 			Variant: button.VariantDefault,
 			Type:    button.TypeSubmit,
 		}) {
-			Guardar
+			{ i18n.T(ctx, "save") }
 		}
 		@button.Button(button.Props{
 			Type:    button.TypeSubmit,
 			Variant: button.VariantGhost,
 			Href:    "/app/users?page_number=1",
 		}) {
-			Cancelar
+			{ i18n.T(ctx, "cancel") }
 		}
 	}
 }

@@ -4,6 +4,7 @@ import "templ-demo/internal/domain/models"
 import "github.com/manicar2093/gormpager"
 import "templ-demo/cmd/service/ui/layouts"
 import "templ-demo/cmd/service/ui/components/button"
+import "github.com/invopop/ctxi18n/i18n"
 
 templ UserIndex(page *gormpager.Page[models.User]) {
 	@layouts.Initial() {
@@ -12,7 +13,7 @@ templ UserIndex(page *gormpager.Page[models.User]) {
 			Variant: button.VariantLink,
 			Href: "/app/users/new",
 		}) {
-			Crear usuario
+		    { i18n.T(ctx, "create_new") }
 		}
 	}
 }
