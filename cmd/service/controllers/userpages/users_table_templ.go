@@ -14,9 +14,9 @@ import (
 	"net/http"
 	"templ-demo/cmd/service/ui/components/button"
 	"templ-demo/cmd/service/ui/components/label"
-	"templ-demo/cmd/service/ui/components/link"
 	"templ-demo/cmd/service/ui/components/pagination"
 	"templ-demo/cmd/service/ui/components/table"
+	"templ-demo/core/coretpls/link"
 	"templ-demo/internal/domain/models"
 	"time"
 )

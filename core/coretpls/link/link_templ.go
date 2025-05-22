@@ -10,8 +10,8 @@ import templruntime "github.com/a-h/templ/runtime"
 
 import "templ-demo/cmd/service/ui/components/button"
 import "templ-demo/cmd/service/ui/utils"
+import "templ-demo/core/coretpls/formtag"
 import "net/http"
-import "templ-demo/cmd/service/ui/components/formtag"
 
 type LinkProps struct {
 	Href    string

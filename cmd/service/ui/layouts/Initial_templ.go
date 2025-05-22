@@ -10,11 +10,11 @@ import templruntime "github.com/a-h/templ/runtime"
 
 import "templ-demo/cmd/service/ui/components/drawer"
 
-import "templ-demo/cmd/service/ui/components/formtag"
 import "templ-demo/cmd/service/ui/components/icon"
 import "templ-demo/cmd/service/ui/components/toast"
 
 import "templ-demo/core"
+import "templ-demo/core/coretpls/formtag"
 
 func Initial() templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {

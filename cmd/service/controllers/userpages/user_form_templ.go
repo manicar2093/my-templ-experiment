@@ -13,7 +13,7 @@ import "templ-demo/cmd/service/ui/components/form"
 import "templ-demo/cmd/service/ui/components/label"
 import "templ-demo/cmd/service/ui/components/input"
 import "templ-demo/cmd/service/ui/components/button"
-import "templ-demo/cmd/service/ui/components/formtag"
+import "templ-demo/core/coretpls/formtag"
 import "github.com/gookit/validate"
 
 type UserFormProperties struct {

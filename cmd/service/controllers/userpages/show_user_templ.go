@@ -16,7 +16,7 @@ import "time"
 import "templ-demo/cmd/service/ui/components/button"
 import "fmt"
 import "net/http"
-import "templ-demo/cmd/service/ui/components/link"
+import "templ-demo/core/coretpls/link"
 
 func ShowUser(user *models.User) templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {
