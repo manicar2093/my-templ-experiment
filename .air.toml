@@ -43,7 +43,7 @@ kill_delay = 500 # ms
 # Rerun binary or not
 rerun = false
 # Delay after each executions
-rerun_delay = 1000
+rerun_delay = 2000
 # Add additional arguments when running binary (bin/full_bin). Will run './tmp/main hello world'.
 args_bin = []
 

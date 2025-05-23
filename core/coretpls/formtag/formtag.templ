@@ -23,7 +23,7 @@ templ FormTag(props FormTagProperties) {
 	if isOverwritableMethod {
 		{{ formMethod = http.MethodPost }}
 	} else {
-		formMethod = http.MethodGet
+		{{ formMethod = http.MethodGet }}
 	}
 	<form
 		id={ props.Id }

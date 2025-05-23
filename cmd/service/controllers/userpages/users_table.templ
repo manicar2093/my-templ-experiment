@@ -44,7 +44,7 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 							</a>
 						}
 						@table.Cell() {
-							{ user.CreatedAt.Format(time.DateTime) }
+							{ user.CreatedAt.Local().Format(time.DateTime) } hrs
 						}
 						@table.Cell() {
 							@button.Button(button.Props{

@@ -26,22 +26,31 @@ templ ShowUser(user *models.User) {
                 @label.Label() {
                     CreatedAt
                 }
-                <p>{ user.CreatedAt.Format(time.DateTime) }</p>
+                <p>{ user.CreatedAt.Local().Format(time.DateTime) } hrs</p>
             }
 		</div>
 
 		@link.Link(link.LinkProps{
-			Href:    fmt.Sprintf("/app/users/%s", user.Id),
+            Href:    fmt.Sprintf("/app/users/%s", user.Id),
+            Confirm: fmt.Sprintf("Are you sure to delete %s", user.Email),
+            Variant: button.VariantDefault,
+            Class: "inline-block",
+        }) {
+            { i18n.T(ctx, "edit") }
+        }
+
+		@link.Link(link.LinkProps{
+			Href:    fmt.Sprintf("/app/users/%s/edit", user.Id),
 			Confirm: fmt.Sprintf("Are you sure to delete %s", user.Email),
 			Method: http.MethodDelete,
 			Variant: button.VariantDestructive,
 			Class: "inline-block",
 		}) {
-			Eliminar
+			{ i18n.T(ctx, "delete") }
 		}
 
 		@button.Button(button.Props{
-			Variant: button.VariantDefault,
+			Variant: button.VariantSecondary,
 			Href: "/app/users/new",
 		}) {
 			 { i18n.T(ctx, "create_new") }
