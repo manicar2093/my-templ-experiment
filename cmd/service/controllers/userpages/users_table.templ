@@ -55,7 +55,7 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 							}
 							@link.Link(link.LinkProps{
 								Href:    fmt.Sprintf("/app/users/%s?page_number=%d", user.Id, page.CurrentPage),
-								Confirm: fmt.Sprintf("Are you sure to delete %s", user.Email),
+								Confirm: i18n.T(ctx, "confirm_deletion"),
 								Method:  http.MethodDelete,
 								Variant: button.VariantDestructive,
 								Class:   "inline-block",
@@ -77,7 +77,7 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 						@pagination.Previous(pagination.PreviousProps{
 							Href:     fmt.Sprintf("?page_number=%d", p.CurrentPage-1),
 							Disabled: !p.HasPrevious,
-							Label:    "Previous",
+							Label:   i18n.T(ctx, "previous"),
 						})
 					}
 					// First page with ellipsis if needed
@@ -125,7 +125,7 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 						@pagination.Next(pagination.NextProps{
 							Href:     fmt.Sprintf("?page_number=%d", p.CurrentPage+1),
 							Disabled: !p.HasNext,
-							Label:    "Next",
+							Label:    i18n.T(ctx, "next"),
 						})
 					}
 				}

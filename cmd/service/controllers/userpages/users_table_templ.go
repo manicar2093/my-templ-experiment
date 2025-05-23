@@ -357,7 +357,7 @@ func UsersTable(page *gormpager.Page[models.User]) templ.Component {
 								})
 								templ_7745c5c3_Err = link.Link(link.LinkProps{
 									Href:    fmt.Sprintf("/app/users/%s?page_number=%d", user.Id, page.CurrentPage),
-									Confirm: fmt.Sprintf("Are you sure to delete %s", user.Email),
+									Confirm: i18n.T(ctx, "confirm_deletion"),
 									Method:  http.MethodDelete,
 									Variant: button.VariantDestructive,
 									Class:   "inline-block",
@@ -438,7 +438,7 @@ func UsersTable(page *gormpager.Page[models.User]) templ.Component {
 						templ_7745c5c3_Err = pagination.Previous(pagination.PreviousProps{
 							Href:     fmt.Sprintf("?page_number=%d", p.CurrentPage-1),
 							Disabled: !p.HasPrevious,
-							Label:    "Previous",
+							Label:    i18n.T(ctx, "previous"),
 						}).Render(ctx, templ_7745c5c3_Buffer)
 						if templ_7745c5c3_Err != nil {
 							return templ_7745c5c3_Err
@@ -679,7 +679,7 @@ func UsersTable(page *gormpager.Page[models.User]) templ.Component {
 						templ_7745c5c3_Err = pagination.Next(pagination.NextProps{
 							Href:     fmt.Sprintf("?page_number=%d", p.CurrentPage+1),
 							Disabled: !p.HasNext,
-							Label:    "Next",
+							Label:    i18n.T(ctx, "next"),
 						}).Render(ctx, templ_7745c5c3_Buffer)
 						if templ_7745c5c3_Err != nil {
 							return templ_7745c5c3_Err

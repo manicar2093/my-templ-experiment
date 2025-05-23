@@ -2,8 +2,8 @@
 package controllers
 
 import (
-	"fmt"
 	"github.com/gookit/validate"
+	"github.com/invopop/ctxi18n/i18n"
 	"github.com/pkg/errors"
 	"net/http"
 	"templ-demo/cmd/service/controllers/userpages"
@@ -46,7 +46,7 @@ func (c *UserWebController) SetUpRoutes(group *echo.Group) {
 	// Creates a user
 	userGroup.POST("", c.SaveHandler)
 	// Patch user
-	userGroup.PATCH("/:id", c.PartialUpdateByIdHandler)
+	userGroup.PATCH("/:id", c.SaveHandler)
 	// Updates all user
 	userGroup.PUT("/:id", c.PartialUpdateByIdHandler)
 	// Deletes a user
@@ -54,16 +54,24 @@ func (c *UserWebController) SetUpRoutes(group *echo.Group) {
 
 }
 
+func IsValidationError(err error) (errorsMap validate.Errors, isErr bool) {
+	var asValidationErr *validator.ValidationError
+	isErr = errors.As(err, &asValidationErr)
+	if isErr {
+		return asValidationErr.Errors, isErr
+	}
+	return nil, isErr
+}
+
 func (c *UserWebController) SaveHandler(ctx echo.Context) error {
 	var req = models.User{}
 	if err := core.BindAndValidate(ctx, &req); err != nil {
-		var asValidationErr *validator.ValidationError
-		if errors.As(err, &asValidationErr) {
+		if errorsMap, isValidationErr := IsValidationError(err); isValidationErr {
 			core.SetFlash(ctx, core.FlashMessage{
 				Variant: toast.VariantError,
-				Message: "Hay algunos datos que no están llenos correctamente",
+				Message: i18n.T(ctx.Request().Context(), "validation_error"),
 			})
-			return core.Render(ctx, http.StatusBadRequest, userpages.RegisterUserPage(&req, asValidationErr.Errors))
+			return core.Render(ctx, http.StatusBadRequest, userpages.RegisterUserPage(&req, errorsMap))
 		}
 		return err
 	}
@@ -74,8 +82,8 @@ func (c *UserWebController) SaveHandler(ctx echo.Context) error {
 
 	core.SetFlash(ctx, core.FlashMessage{
 		Variant: toast.VariantSuccess,
-		Message: fmt.Sprintf("%s registrado correctamente", req.Email),
-		Title:   "¡Usuario creado!",
+		Message: i18n.T(ctx.Request().Context(), "correct_registry"),
+		Title:   i18n.T(ctx.Request().Context(), "success"),
 	})
 
 	return ctx.Redirect(http.StatusSeeOther, ctx.Echo().Reverse(ShowUserRouteName, req.Id))
@@ -107,8 +115,8 @@ func (c *UserWebController) PartialUpdateByIdHandler(ctx echo.Context) error {
 
 	core.SetFlash(ctx, core.FlashMessage{
 		Variant: toast.VariantSuccess,
-		Message: "Usuario actualizado correctamente",
-		Title:   "¡Éxito!",
+		Message: i18n.T(ctx.Request().Context(), "correct_update"),
+		Title:   i18n.T(ctx.Request().Context(), "success"),
 	})
 
 	return ctx.Redirect(http.StatusSeeOther, ctx.Echo().Reverse(ShowUserRouteName, res.Id))
@@ -128,8 +136,8 @@ func (c *UserWebController) DeleteByIdHandler(ctx echo.Context) error {
 
 	core.SetFlash(ctx, core.FlashMessage{
 		Variant: toast.VariantSuccess,
-		Message: "Usuario eliminado correctamente",
-		Title:   "¡Éxito!",
+		Message: i18n.T(ctx.Request().Context(), "correct_deletion"),
+		Title:   i18n.T(ctx.Request().Context(), "success"),
 	})
 
 	return ctx.Redirect(http.StatusSeeOther, "/app/users?page_number=1")
