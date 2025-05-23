@@ -7,7 +7,7 @@ import (
 	"github.com/pkg/errors"
 	"net/http"
 	"templ-demo/cmd/service/controllers/userpages"
-	"templ-demo/cmd/service/ui/components/toast"
+	"templ-demo/core/coretpls/toast"
 	"templ-demo/core/validator"
 
 	core "templ-demo/core"
