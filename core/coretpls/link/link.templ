@@ -15,16 +15,10 @@ type LinkProps struct {
 
 templ Link(props LinkProps) {
 	{{ id := utils.RandomID() }}
-	if props.Method == http.MethodGet {
-		@button.Button(button.Props{
-			ID:      id,
-			Href:    props.Href,
-			Variant: props.Variant,
-			Class:   props.Class,
-		}) {
-			{ children... }
-		}
-	} else {
+	if props.Method == "" {
+		{{ props.Method = http.MethodGet }}
+	}
+	if props.Method != http.MethodGet {
 		@formtag.FormTag(formtag.FormTagProperties{
 			Id:      id,
 			Action:  props.Href,
@@ -38,6 +32,15 @@ templ Link(props LinkProps) {
 			}) {
 				{ children... }
 			}
+		}
+	} else {
+		@button.Button(button.Props{
+			ID:      id,
+			Href:    props.Href,
+			Variant: props.Variant,
+			Class:   props.Class,
+		}) {
+			{ children... }
 		}
 	}
 }

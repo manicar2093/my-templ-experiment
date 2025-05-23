@@ -31,16 +31,14 @@ templ ShowUser(user *models.User) {
 		</div>
 
 		@link.Link(link.LinkProps{
-            Href:    fmt.Sprintf("/app/users/%s", user.Id),
-            Confirm: fmt.Sprintf("Are you sure to delete %s", user.Email),
+            Href:    fmt.Sprintf("/app/users/%s/edit", user.Id),
             Variant: button.VariantDefault,
-            Class: "inline-block",
         }) {
             { i18n.T(ctx, "edit") }
         }
 
 		@link.Link(link.LinkProps{
-			Href:    fmt.Sprintf("/app/users/%s/edit", user.Id),
+			Href:    fmt.Sprintf("/app/users/%s", user.Id),
 			Confirm: fmt.Sprintf("Are you sure to delete %s", user.Email),
 			Method: http.MethodDelete,
 			Variant: button.VariantDestructive,

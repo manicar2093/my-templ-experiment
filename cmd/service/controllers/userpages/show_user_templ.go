@@ -202,7 +202,7 @@ func ShowUser(user *models.User) templ.Component {
 				var templ_7745c5c3_Var11 string
 				templ_7745c5c3_Var11, templ_7745c5c3_Err = templ.JoinStringErrs(i18n.T(ctx, "edit"))
 				if templ_7745c5c3_Err != nil {
-					return templ.Error{Err: templ_7745c5c3_Err, FileName: `cmd/service/controllers/userpages/show_user.templ`, Line: 39, Col: 33}
+					return templ.Error{Err: templ_7745c5c3_Err, FileName: `cmd/service/controllers/userpages/show_user.templ`, Line: 37, Col: 33}
 				}
 				_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var11))
 				if templ_7745c5c3_Err != nil {
@@ -211,10 +211,8 @@ func ShowUser(user *models.User) templ.Component {
 				return nil
 			})
 			templ_7745c5c3_Err = link.Link(link.LinkProps{
-				Href:    fmt.Sprintf("/app/users/%s", user.Id),
-				Confirm: fmt.Sprintf("Are you sure to delete %s", user.Email),
+				Href:    fmt.Sprintf("/app/users/%s/edit", user.Id),
 				Variant: button.VariantDefault,
-				Class:   "inline-block",
 			}).Render(templ.WithChildren(ctx, templ_7745c5c3_Var10), templ_7745c5c3_Buffer)
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
@@ -238,7 +236,7 @@ func ShowUser(user *models.User) templ.Component {
 				var templ_7745c5c3_Var13 string
 				templ_7745c5c3_Var13, templ_7745c5c3_Err = templ.JoinStringErrs(i18n.T(ctx, "delete"))
 				if templ_7745c5c3_Err != nil {
-					return templ.Error{Err: templ_7745c5c3_Err, FileName: `cmd/service/controllers/userpages/show_user.templ`, Line: 49, Col: 26}
+					return templ.Error{Err: templ_7745c5c3_Err, FileName: `cmd/service/controllers/userpages/show_user.templ`, Line: 47, Col: 26}
 				}
 				_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var13))
 				if templ_7745c5c3_Err != nil {
@@ -247,7 +245,7 @@ func ShowUser(user *models.User) templ.Component {
 				return nil
 			})
 			templ_7745c5c3_Err = link.Link(link.LinkProps{
-				Href:    fmt.Sprintf("/app/users/%s/edit", user.Id),
+				Href:    fmt.Sprintf("/app/users/%s", user.Id),
 				Confirm: fmt.Sprintf("Are you sure to delete %s", user.Email),
 				Method:  http.MethodDelete,
 				Variant: button.VariantDestructive,
@@ -275,7 +273,7 @@ func ShowUser(user *models.User) templ.Component {
 				var templ_7745c5c3_Var15 string
 				templ_7745c5c3_Var15, templ_7745c5c3_Err = templ.JoinStringErrs(i18n.T(ctx, "create_new"))
 				if templ_7745c5c3_Err != nil {
-					return templ.Error{Err: templ_7745c5c3_Err, FileName: `cmd/service/controllers/userpages/show_user.templ`, Line: 56, Col: 31}
+					return templ.Error{Err: templ_7745c5c3_Err, FileName: `cmd/service/controllers/userpages/show_user.templ`, Line: 54, Col: 31}
 				}
 				_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var15))
 				if templ_7745c5c3_Err != nil {
@@ -309,7 +307,7 @@ func ShowUser(user *models.User) templ.Component {
 				var templ_7745c5c3_Var17 string
 				templ_7745c5c3_Var17, templ_7745c5c3_Err = templ.JoinStringErrs(i18n.T(ctx, "show_all"))
 				if templ_7745c5c3_Err != nil {
-					return templ.Error{Err: templ_7745c5c3_Err, FileName: `cmd/service/controllers/userpages/show_user.templ`, Line: 63, Col: 32}
+					return templ.Error{Err: templ_7745c5c3_Err, FileName: `cmd/service/controllers/userpages/show_user.templ`, Line: 61, Col: 32}
 				}
 				_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var17))
 				if templ_7745c5c3_Err != nil {
