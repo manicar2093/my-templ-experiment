@@ -22,7 +22,7 @@ func SessionSecretKeyMiddleware(sessionSecret SessionSecretKeyConfig) echo.Middl
 
 func I18nMiddleware(embedLocalizations embed.FS, defaultLocale i18n.Code) echo.MiddlewareFunc {
 	if defaultLocale == "" {
-		defaultLocale = "en"
+		defaultLocale = ctxi18n.DefaultLocale
 	}
 	if err := ctxi18n.LoadWithDefault(embedLocalizations, defaultLocale); err != nil {
 		panic(err)
