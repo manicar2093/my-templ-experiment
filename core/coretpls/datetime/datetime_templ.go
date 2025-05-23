@@ -18,10 +18,10 @@ import (
 type DatetimeProps struct {
 	ID         string
 	Name       string
+	Value      time.Time
 	HasError   bool
 	Required   bool
 	Attributes templ.Attributes
-	Value      time.Time
 }
 
 func Datetime(props DatetimeProps) templ.Component {

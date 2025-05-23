@@ -8,8 +8,7 @@ import "templ-demo/cmd/service/ui/components/button"
 import "templ-demo/core/coretpls/formtag"
 import "github.com/gookit/validate"
 import "github.com/invopop/ctxi18n/i18n"
-import "time"
-import "fmt"
+import "templ-demo/core/coretpls/datetime"
 
 type UserFormProperties struct {
 	Action string
@@ -90,42 +89,13 @@ templ UserForm(user *models.User, errors validate.Errors, props UserFormProperti
 				}) {
 					Created at
 				}
-				{{ shadowingElementId := fmt.Sprintf("%s-shadowing",createdAtKey) }}
-				@input.Input(input.Props{
-					ID:       createdAtKey,
-					Type:     input.TypeDateTime,
-					HasError: hasCreatedAtErrors,
-					Required: true,
-					Attributes: templ.Attributes{
-						"data-datetime-utc": user.CreatedAt.Format(time.RFC3339),
-						"data-shadowing-input": shadowingElementId,
-					},
+				@datetime.Datetime(datetime.DatetimeProps{
+				    ID: createdAtKey,
+				    Name: createdAtKey,
+				    Value: user.CreatedAt,
+				    HasError: hasCreatedAtErrors,
+				    Required: true,
 				})
-				<input id={ shadowingElementId } hidden type="text" name="created_at" value={ user.CreatedAt.Format(time.RFC3339) }>
-				<script>
-                    (function(){
-                        const datetimeUtc = document.querySelectorAll("[data-datetime-utc]")
-                        datetimeUtc.forEach(el => {
-                            const unformatedDate = el.dataset.datetimeUtc
-                            const asDate = new Date(unformatedDate)
-                            const getMonth = (month) => {
-                                return addPrefixZero(month += 1)
-                            }
-                            const addPrefixZero = (number) => {
-                                if(number >= 10) return `${number}`
-                                return `0${number}`
-                            }
-                            const formatedDate = `${asDate.getFullYear()}-${getMonth(asDate.getMonth())}-${addPrefixZero(asDate.getDate())}T${addPrefixZero(asDate.getHours())}:${addPrefixZero(asDate.getMinutes())}`
-                            el.value = formatedDate;
-                        })
-                        datetimeUtc.forEach(el => {
-                            el.addEventListener('change', event => {
-                                const shadowingInput = document.querySelector(`#${el.dataset.shadowingInput}`)
-                                shadowingInput.value = (new Date(event.srcElement.value).toISOString())
-                            })
-                        })
-                    })()
-                </script>
 				@form.Description() {
 					Enter creation date.
 				}
