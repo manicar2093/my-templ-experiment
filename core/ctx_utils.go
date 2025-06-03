@@ -4,8 +4,6 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
-// SessionSecretKey is the key used to store the session_key in the context. This is used to encrypt the session cookie.
-
 func BindAndValidate(ctx echo.Context, i any) error {
 	if err := ctx.Bind(i); err != nil {
 		return err
