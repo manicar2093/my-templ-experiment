@@ -3,7 +3,7 @@ tmp_dir = "tmp"
 
 [build]
 # Array of commands to run before each build
-pre_cmd = ["task templ && task tailwind"]
+pre_cmd = ["task templ", "task tailwind"]
 # Just plain old shell command. You could use make as well.
 cmd = "task build"
 # Binary file yields from cmd.

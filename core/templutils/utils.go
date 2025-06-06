@@ -18,3 +18,10 @@ func IsOverwritableMethod(method string) bool {
 			http.MethodTrace,
 		}, method)
 }
+
+func IsPathStyles(path, expected, trueStyles, falseStyles string) string {
+	if path == expected {
+		return trueStyles
+	}
+	return falseStyles
+}

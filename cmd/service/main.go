@@ -45,9 +45,12 @@ func main() {
 	e.Use(middleware.Logger())
 
 	userRepository := users.NewUserRepository(dbConn)
+	core.RegisterController(webBaseGroup, controllers.NewInitWebController())
 	core.RegisterController(webBaseGroup, controllers.NewUserWebController(
 		userRepository,
 	))
+
+	core.RegisterController(restBaseGroup, controllers.NewInitRestController())
 	core.RegisterController(restBaseGroup, controllers.NewUserController(
 		userRepository,
 	))
