@@ -56,7 +56,7 @@ func main() {
 	}
 
 	e.HTTPErrorHandler = apperrors.HandlerWEcho
-	e.Validator = validator.NewGooKitValidator()
+	e.Validator = validator.NoValidatorWarning{}
 
 	e.Logger.Fatal(e.Start(fmt.Sprintf(":%d", conf.Port)))
 }
