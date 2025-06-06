@@ -4,7 +4,6 @@ package controllers
 import (
 	"github.com/gookit/validate"
 	"github.com/invopop/ctxi18n/i18n"
-	"github.com/pkg/errors"
 	"net/http"
 	"templ-demo/cmd/service/controllers/userpages"
 	"templ-demo/core/coretpls/toast"
@@ -54,19 +53,10 @@ func (c *UserWebController) SetUpRoutes(group *echo.Group) {
 
 }
 
-func IsValidationError(err error) (errorsMap validate.Errors, isErr bool) {
-	var asValidationErr *validator.ValidationError
-	isErr = errors.As(err, &asValidationErr)
-	if isErr {
-		return asValidationErr.Errors, isErr
-	}
-	return nil, isErr
-}
-
 func (c *UserWebController) SaveHandler(ctx echo.Context) error {
 	var req = models.User{}
 	if err := core.BindAndValidate(ctx, &req); err != nil {
-		if errorsMap, isValidationErr := IsValidationError(err); isValidationErr {
+		if errorsMap, isValidationErr := validator.IsValidationError(err); isValidationErr {
 			core.SetFlash(ctx, core.FlashMessage{
 				Variant: toast.VariantError,
 				Message: i18n.T(ctx.Request().Context(), "validation_error"),
