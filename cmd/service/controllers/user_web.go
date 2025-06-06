@@ -13,7 +13,7 @@ import (
 	core "templ-demo/core"
 	commonreq "templ-demo/core/commonreq"
 	models "templ-demo/internal/domain/models"
-	user "templ-demo/internal/user"
+	users "templ-demo/internal/users"
 
 	echo "github.com/labstack/echo/v4"
 )
@@ -23,10 +23,10 @@ const (
 )
 
 type UserWebController struct {
-	userRepository *user.UserRepository
+	userRepository *users.UserRepository
 }
 
-func NewUserWebController(userRepository *user.UserRepository) *UserWebController {
+func NewUserWebController(userRepository *users.UserRepository) *UserWebController {
 	return &UserWebController{
 		userRepository: userRepository,
 	}
@@ -104,7 +104,7 @@ func (c *UserWebController) GetAllPaginatedHandler(ctx echo.Context) error {
 }
 
 func (c *UserWebController) PartialUpdateByIdHandler(ctx echo.Context) error {
-	req := user.PartialUpdateByIdInput{}
+	req := users.PartialUpdateByIdInput{}
 	if err := core.BindAndValidate(ctx, &req); err != nil {
 		return err
 	}

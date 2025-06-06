@@ -13,3 +13,11 @@ type User struct {
 	CreatedAt time.Time `gorm:"default:now()" json:"created_at" mapstructure:"created_at" param:"created_at" form:"created_at"`
 	Status    Status    `json:"status" mapstructure:"status" param:"status" form:"status" validate:"required|in:active,deactived,pending"`
 }
+
+type Status string
+
+const (
+	Active      Status = "active"
+	Deactivated Status = "deactivated"
+	Pending     Status = "pending"
+)

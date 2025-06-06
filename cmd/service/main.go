@@ -2,6 +2,9 @@ package main
 
 import (
 	"fmt"
+	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
+	"github.com/manicar2093/echoroutesview"
 	"templ-demo/cmd/service/controllers"
 	"templ-demo/cmd/service/translations"
 	"templ-demo/core"
@@ -10,12 +13,8 @@ import (
 	"templ-demo/core/converters"
 	"templ-demo/core/logger"
 	"templ-demo/core/validator"
-	"templ-demo/internal/user"
+	"templ-demo/internal/users"
 	"templ-demo/pkg/config"
-
-	"github.com/labstack/echo/v4"
-	"github.com/labstack/echo/v4/middleware"
-	"github.com/manicar2093/echoroutesview"
 )
 
 func main() {
@@ -45,7 +44,7 @@ func main() {
 
 	e.Use(middleware.Logger())
 
-	userRepository := user.NewUserRepository(dbConn)
+	userRepository := users.NewUserRepository(dbConn)
 	core.RegisterController(webBaseGroup, controllers.NewUserWebController(
 		userRepository,
 	))

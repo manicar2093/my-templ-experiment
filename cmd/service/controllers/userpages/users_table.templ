@@ -27,6 +27,9 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 					Email
 				}
 				@table.Head() {
+					Status
+				}
+				@table.Head() {
 					Created at
 				}
 				@table.Head() {
@@ -43,6 +46,9 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 								{ user.Email }
 							</a>
 						}
+						@table.Cell() {
+                            { user.Status }
+                        }
 						@table.Cell() {
 							{ user.CreatedAt.Local().Format(time.DateTime) } hrs
 						}

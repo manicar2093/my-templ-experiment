@@ -14,3 +14,4 @@ en:
   confirm_deletion: "Are you sure you want to delete it?"
   next: "Next"
   previous: "Previous"
+  select_placeholder: "Select one option"

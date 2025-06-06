@@ -1,5 +1,6 @@
 {
-  "componentsDir": "cmd/web/ui/components",
-  "utilsDir": "cmd/web/ui/utils",
-  "moduleName": "templ-demo"
+  "componentsDir": "cmd/service/ui/components",
+  "utilsDir": "cmd/service/ui/utils",
+  "moduleName": "templ-demo",
+  "jsDir": "cmd/service/assets/js"
 }

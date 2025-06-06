@@ -14,3 +14,4 @@ es:
   confirm_deletion: "¿Estás seguro quieres eliminarlo?"
   next: "Siguiente"
   previous: "Previo"
+  select_placeholder: "Selecciona una opción"

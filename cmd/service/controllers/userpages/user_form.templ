@@ -5,6 +5,7 @@ import "templ-demo/cmd/service/ui/components/form"
 import "templ-demo/cmd/service/ui/components/label"
 import "templ-demo/cmd/service/ui/components/input"
 import "templ-demo/cmd/service/ui/components/button"
+import "templ-demo/cmd/service/ui/components/selectbox"
 import "templ-demo/core/coretpls/formtag"
 import "github.com/gookit/validate"
 import "github.com/invopop/ctxi18n/i18n"
@@ -92,14 +93,13 @@ templ UserForm(user *models.User, errors validate.Errors, props UserFormProperti
 				@datetime.Datetime(datetime.DatetimeProps{
 				    ID: createdAtKey,
 				    Name: createdAtKey,
-				    Value: user.CreatedAt,
+				    Value: user.CreatedAt.UTC(),
 				    HasError: hasCreatedAtErrors,
-				    Required: true,
 				})
 				@form.Description() {
 					Enter creation date.
 				}
-				if hasPasswordErrors {
+				if hasCreatedAtErrors {
 					for _,value := range errors.Field(createdAtKey) {
 						@form.Message(form.MessageProps{
 							Variant: form.MessageVariantError,
@@ -109,6 +109,66 @@ templ UserForm(user *models.User, errors validate.Errors, props UserFormProperti
 					}
 				}
 			}
+
+			{{ statusKey := "status" }}
+            {{ hasStatusErrors := errors.HasField(statusKey) }}
+            @form.Item(form.ItemProps{}) {
+                @label.Label(label.Props{
+                    For: statusKey,
+                }) {
+                    Status
+                }
+                @selectbox.SelectBox() {
+                    @selectbox.Trigger(selectbox.TriggerProps{
+                        ID: statusKey,
+                        Name: statusKey,
+                        Required: true,
+                        HasError: hasStatusErrors,
+                    }) {
+                        @selectbox.Value(selectbox.ValueProps{
+                            Placeholder: i18n.T(ctx, "select_placeholder"),
+                        })
+                    }
+                    @selectbox.Content() {
+                        @selectbox.Group() {
+                            @selectbox.Item(selectbox.ItemProps{
+                                Value: "active",
+                                Selected: user.Status == "active",
+                                Disabled: user.Status == "active",
+                            }) {
+                                Active
+                            }
+
+                            @selectbox.Item(selectbox.ItemProps{
+                                Value: "deactived",
+                                Selected: user.Status == "deactived",
+                                Disabled: user.Status == "deactived",
+                            }) {
+                                Deactived
+                            }
+                            @selectbox.Item(selectbox.ItemProps{
+                                Value: "pending",
+                                Selected: user.Status == "pending",
+                                Disabled: user.Status == "pending",
+                            }) {
+                                Pending
+                            }
+                        }
+                    }
+                }
+            }
+            @form.Description() {
+                Enter status.
+            }
+            if hasStatusErrors {
+                for _,value := range errors.Field(statusKey) {
+                    @form.Message(form.MessageProps{
+                        Variant: form.MessageVariantError,
+                    }) {
+                        { value }
+                    }
+                }
+            }
 		</div>
 		@button.Button(button.Props{
 			Variant: button.VariantDefault,

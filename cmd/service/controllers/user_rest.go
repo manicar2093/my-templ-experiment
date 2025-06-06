@@ -8,14 +8,14 @@ import (
 	core "templ-demo/core"
 	commonreq "templ-demo/core/commonreq"
 	models "templ-demo/internal/domain/models"
-	user "templ-demo/internal/user"
+	users "templ-demo/internal/users"
 )
 
 type UserController struct {
-	userRepository *user.UserRepository
+	userRepository *users.UserRepository
 }
 
-func NewUserController(userRepository *user.UserRepository) *UserController {
+func NewUserController(userRepository *users.UserRepository) *UserController {
 	return &UserController{
 		userRepository: userRepository,
 	}
@@ -74,7 +74,7 @@ func (c *UserController) GetAllPaginatedHandler(ctx echo.Context) error {
 }
 
 func (c *UserController) PartialUpdateByIdHandler(ctx echo.Context) error {
-	req := user.PartialUpdateByIdInput{}
+	req := users.PartialUpdateByIdInput{}
 	if err := core.BindAndValidate(ctx, &req); err != nil {
 		return err
 	}

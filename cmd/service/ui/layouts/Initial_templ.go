@@ -15,6 +15,8 @@ import "templ-demo/cmd/service/ui/components/icon"
 import "templ-demo/core"
 import "templ-demo/core/coretpls/formtag"
 import "templ-demo/core/coretpls/toast"
+import "templ-demo/cmd/service/ui/components/popover"
+import "templ-demo/cmd/service/ui/components/selectbox"
 
 func Initial() templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {
@@ -142,6 +144,14 @@ func Initial() templ.Component {
 			return templ_7745c5c3_Err
 		}
 		templ_7745c5c3_Err = formtag.Script().Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = selectbox.Script().Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = popover.Script().Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

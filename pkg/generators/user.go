@@ -12,6 +12,7 @@ func GenerateUser(t testingI, args map[string]any) models.User {
 		Email:     gofakeit.Word(),
 		Id:        uuid.New(),
 		Password:  gofakeit.Word(),
+		Status:    models.Active,
 	}
 
 	decode(t, args, &fak)

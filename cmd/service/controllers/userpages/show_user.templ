@@ -28,6 +28,13 @@ templ ShowUser(user *models.User) {
                 }
                 <p>{ user.CreatedAt.Local().Format(time.DateTime) } hrs</p>
             }
+
+            @form.Item() {
+                @label.Label() {
+                    Status
+                }
+                <p>{ user.Status }</p>
+            }
 		</div>
 
 		@link.Link(link.LinkProps{

@@ -3,6 +3,13 @@ model User {
   email      String
   password   String
   created_at DateTime @default(now())
+  status     Status   @default(pending)
 
   @@map("users")
+}
+
+enum Status {
+  active
+  deactived
+  pending
 }
