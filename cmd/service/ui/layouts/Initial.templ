@@ -1,18 +1,10 @@
 package layouts
 
-import "templ-demo/cmd/service/ui/components/drawer"
-
-import "templ-demo/cmd/service/ui/components/icon"
-
-import "templ-demo/core"
 import "templ-demo/core/coretpls/formtag"
-import "templ-demo/core/coretpls/toast"
+
 import "templ-demo/cmd/service/ui/components/popover"
 import "templ-demo/cmd/service/ui/components/selectbox"
-import "templ-demo/cmd/service/ui/components/button"
-import "templ-demo/core/templutils"
-import "strings"
-import "github.com/rjNemo/underscore"
+import "templ-demo/core"
 
 templ Initial() {
 	<!DOCTYPE html>
@@ -26,69 +18,9 @@ templ Initial() {
 			<title>Gomancer demo</title>
 		</head>
 		<body class="transition-colors duration-300 relative">
-			@showFlash()
-            {{ echoCtx := core.GetEchoTemplContext(ctx) }}
-			@drawer.Drawer(drawer.Props{
-                Class: "sticky top-0 z-10",
-            }) {
-				<div class="w-full bg-background py-2 mb-3 shadow-md">
-					<div class="max-w-7xl md:max-w-4xl flex flex-row justify-between mx-auto">
-						@drawer.Trigger(drawer.TriggerProps{
-							Class: "opacity-50 hover:opacity-100 inline-block p-2 ml-3",
-						}) {
-							<div>
-								@icon.Menu(icon.Props{
-									Class: "text-primary",
-								})
-							</div>
-						}
-						<div class="md:flex md:items-center md:gap-12 justify-item-end">
-							<nav aria-label="Global" class="hidden md:block">
-								<ul class="flex justify-end items-right gap-2 text-sm">
-									<li>
-										@button.Button(button.Props{
-											Href:    "/app/initial",
-											Variant: button.VariantLink,
-											Class: templutils.IsPathStyles(echoCtx.Path(), "/app/initial", "underline", ""),
-										}) {
-											Home
-										}
-									</li>
-									<li>
-                                        @button.Button(button.Props{
-                                            Href:    "/app/users",
-                                            Variant: button.VariantLink,
-                                            Class: strings.Join(
-                                                []string{
-                                                    templutils.IsPathStyles(echoCtx.Path(), "/app/users", "underline", ""),
-                                                    underscore.Ternary(strings.Contains(echoCtx.Path(), "/app/users/"), "underline", ""),
-                                                },
-                                                " ",
-                                            ),
-                                        }) {
-                                            Users
-                                        }
-                                    </li>
-									<li>
-										@button.Button(button.Props{
-											Size:    button.SizeIcon,
-											ID:      "theme-toggle",
-											Variant: button.VariantGhost,
-										}) {
-											@icon.Sun(icon.Props{})
-										}
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-				@drawer.Content(drawer.ContentProps{
-					Position: drawer.PositionLeft,
-				}) {
-					@SideMenu()
-				}
-			}
+		    {{ echoCtx := core.GetEchoTemplContext(ctx) }}
+			@showFlash(echoCtx)
+			@MenuAndDrawer(echoCtx)
 			<div class="mx-auto max-w-7xl md:max-w-4xl px-2">
 				{ children... }
 			</div>
@@ -99,111 +31,4 @@ templ Initial() {
 			@popover.Script()
 		</body>
 	</html>
-}
-
-templ SideMenu() {
-    {{ echoCtx := core.GetEchoTemplContext(ctx) }}
-	<div class="flex h-full flex-col justify-between bg-background">
-		<div class="px-4 py-6">
-			<span class="grid h-10 w-32 place-content-center rounded-lg bg-background text-xs">
-				Gomancer
-			</span>
-			<ul class="mt-6 space-y-1">
-				<li>
-					<a
-						href="/app/initial"
-						class={
-						    "block rounded-lg px-4 py-2 text-sm font-medium",
-						    templutils.IsPathStyles(
-						        echoCtx.Path(),
-						        "/app/initial",
-						        "bg-primary text-primary-foreground hover:bg-primary/90",
-						        "hover:bg-accent hover:text-accent-foreground",
-						    ),
-						}
-					>
-						Home
-					</a>
-				</li>
-				<li>
-					<details class="group [&_summary::-webkit-details-marker]:hidden" open?={strings.Contains(echoCtx.Path(), "/app/users")}>
-						<summary
-							class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 hover:bg-accent hover:text-accent-foreground"
-						>
-							<span class="text-sm font-medium">Users</span>
-							<span class="shrink-0 transition duration-300 group-open:-rotate-180">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="size-5"
-									viewBox="0 0 20 20"
-									fill="currentColor"
-								>
-									<path
-										fill-rule="evenodd"
-										d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-										clip-rule="evenodd"
-									></path>
-								</svg>
-							</span>
-						</summary>
-						<ul class="mt-2 space-y-1 px-4">
-							<li>
-								<a
-									href="/app/users/new"
-									class={
-                                        "block flex flex-row rounded-lg px-4 py-2 text-sm font-medium",
-                                        templutils.IsPathStyles(
-                                            echoCtx.Path(),
-                                            "/app/users/new",
-                                            "bg-primary text-primary-foreground hover:bg-primary/90",
-                                            "hover:bg-accent hover:text-accent-foreground",
-                                        ),
-                                    }
-								>
-									@icon.User(icon.Props{
-										Class: "mr-2",
-									})
-									New
-								</a>
-							</li>
-							<li>
-								<a
-									href="/app/users"
-									class={
-									    "block flex flex-row rounded-lg px-4 py-2 text-sm font-medium",
-                                        templutils.IsPathStyles(
-                                            echoCtx.Path(),
-                                            "/app/users",
-                                            "bg-primary text-primary-foreground hover:bg-primary/90",
-                                            "hover:bg-accent hover:text-accent-foreground",
-                                        ),
-									}
-								>
-									@icon.List(icon.Props{
-										Class: "mr-2",
-									})
-									All
-								</a>
-							</li>
-						</ul>
-					</details>
-				</li>
-			</ul>
-		</div>
-	</div>
-}
-
-templ showFlash() {
-	{{ echoTemplCtx := core.GetEchoTemplContext(ctx) }}
-	{{ flashes := echoTemplCtx.GetFlash() }}
-	for _, flash := range flashes {
-		@toast.Toast(toast.Props{
-			Icon:          true,
-			Variant:       flash.Variant,
-			Title:         flash.Title,
-			Description:   flash.Message,
-			Dismissible:   true,
-			ShowIndicator: true,
-		})
-	}
 }
