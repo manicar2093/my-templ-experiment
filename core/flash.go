@@ -5,7 +5,6 @@ import (
 	"github.com/gorilla/sessions"
 	"github.com/labstack/echo/v4"
 	"github.com/sirupsen/logrus"
-	"templ-demo/core/coretpls/toast"
 )
 
 const (
@@ -14,7 +13,7 @@ const (
 )
 
 type FlashMessage struct {
-	Variant toast.Variant
+	Variant string
 	Message string
 	Title   string
 }

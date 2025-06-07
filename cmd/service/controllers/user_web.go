@@ -58,7 +58,7 @@ func (c *UserWebController) SaveHandler(ctx echo.Context) error {
 	if err := core.BindAndValidate(ctx, &req); err != nil {
 		if errorsMap, isValidationErr := validator.IsValidationError(err); isValidationErr {
 			core.SetFlash(ctx, core.FlashMessage{
-				Variant: toast.VariantError,
+				Variant: string(toast.VariantError),
 				Message: i18n.T(ctx.Request().Context(), "validation_error"),
 			})
 			return core.Render(ctx, http.StatusBadRequest, userpages.RegisterUserPage(&req, errorsMap))
@@ -71,7 +71,7 @@ func (c *UserWebController) SaveHandler(ctx echo.Context) error {
 	}
 
 	core.SetFlash(ctx, core.FlashMessage{
-		Variant: toast.VariantSuccess,
+		Variant: string(toast.VariantSuccess),
 		Message: i18n.T(ctx.Request().Context(), "correct_registry"),
 		Title:   i18n.T(ctx.Request().Context(), "success"),
 	})
@@ -104,7 +104,7 @@ func (c *UserWebController) PartialUpdateByIdHandler(ctx echo.Context) error {
 	}
 
 	core.SetFlash(ctx, core.FlashMessage{
-		Variant: toast.VariantSuccess,
+		Variant: string(toast.VariantSuccess),
 		Message: i18n.T(ctx.Request().Context(), "correct_update"),
 		Title:   i18n.T(ctx.Request().Context(), "success"),
 	})
@@ -125,7 +125,7 @@ func (c *UserWebController) DeleteByIdHandler(ctx echo.Context) error {
 	}
 
 	core.SetFlash(ctx, core.FlashMessage{
-		Variant: toast.VariantSuccess,
+		Variant: string(toast.VariantSuccess),
 		Message: i18n.T(ctx.Request().Context(), "correct_deletion"),
 		Title:   i18n.T(ctx.Request().Context(), "success"),
 	})

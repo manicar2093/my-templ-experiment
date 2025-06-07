@@ -36,7 +36,7 @@ func showFlash(echoCtx *core.EchoContextTemplWrapper) templ.Component {
 		for _, flash := range flashes {
 			templ_7745c5c3_Err = toast.Toast(toast.Props{
 				Icon:          true,
-				Variant:       flash.Variant,
+				Variant:       toast.Variant(flash.Variant),
 				Title:         flash.Title,
 				Description:   flash.Message,
 				Dismissible:   true,
