@@ -35,7 +35,7 @@ func Initial() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<!doctype html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"><script src=\"/app/assets/js/theme-setter.js\"></script><link rel=\"stylesheet\" href=\"/app/assets/css/styles.css\"><title>Gomancer demo</title></head><body class=\"transition-colors duration-300 relative\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<!doctype html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"><script src=\"/app/assets/js/theme-setter.js\"></script><link rel=\"shortcut icon\" href=\"/app/assets/img/favicon.ico\"><link rel=\"stylesheet\" href=\"/app/assets/css/styles.css\"><title>Gomancer demo</title></head><body class=\"transition-colors duration-300 relative\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
