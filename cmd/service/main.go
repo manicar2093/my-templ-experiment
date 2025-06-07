@@ -40,6 +40,7 @@ func main() {
 	webBaseGroup.Use(middleware.CSRFWithConfig(middleware.CSRFConfig{
 		TokenLookup: "form:X-XSRF-TOKEN",
 	}))
+	// needed for flash messages
 	webBaseGroup.Use(core.SessionSecretKeyMiddleware(conf.SessionSecretKeyConfig))
 
 	e.Use(middleware.Logger())
