@@ -20,18 +20,10 @@ tasks:
         desc: Start project with air using your .env file
         dotenv: ['.env']
         cmds:
-            - go tool air
+            - make -j3 tailwind templ dev
     run:
         desc: Start project from build
         dotenv: ['.env']
         deps: [build]
         cmds:
             - ./.bin/service/server
-
-    templ:
-        cmds:
-            - go tool templ generate --proxy="http://localhost:8090" --open-browser=false -v
-
-    tailwind:
-        cmds:
-            - tailwindcss -i ./cmd/service/sources/css/input.css -o ./cmd/service/assets/css/styles.css
