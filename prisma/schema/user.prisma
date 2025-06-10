@@ -4,6 +4,7 @@ model User {
   password   String
   created_at DateTime @default(now())
   status     Status   @default(pending)
+  can_login  Boolean  @default(false)
 
   @@map("users")
 }

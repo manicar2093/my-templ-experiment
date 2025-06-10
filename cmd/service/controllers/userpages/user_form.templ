@@ -10,6 +10,7 @@ import "templ-demo/core/coretpls/formtag"
 import "github.com/gookit/validate"
 import "github.com/invopop/ctxi18n/i18n"
 import "templ-demo/core/coretpls/datetime"
+import "templ-demo/cmd/service/ui/components/toggle"
 
 type UserFormProperties struct {
 	Action string
@@ -167,6 +168,23 @@ templ UserForm(user *models.User, errors validate.Errors, props UserFormProperti
                     }) {
                         { value }
                     }
+                }
+            }
+
+            {{ canLoginKey := "can_login" }}
+            @label.Label(label.Props{
+                For: canLoginKey,
+            }) {
+                Can user login?
+            }
+            @form.ItemFlex() {
+                @toggle.Toggle(toggle.Props{
+                    ID: canLoginKey,
+                    Name: canLoginKey,
+                    Checked: user.CanLogin,
+                })
+                @form.Description() {
+                    {"Check if user can login."}
                 }
             }
 		</div>

@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "users" ADD COLUMN     "can_login" BOOLEAN NOT NULL DEFAULT false,
+ALTER COLUMN "created_at" SET DATA TYPE TIMESTAMP(3);

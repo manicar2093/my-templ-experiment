@@ -35,6 +35,12 @@ templ ShowUser(user *models.User) {
                 }
                 <p>{ user.Status }</p>
             }
+             @form.Item() {
+                @label.Label() {
+                    Can Login?
+                }
+                <p>{ user.CanLogin }</p>
+            }
 		</div>
 
 		@link.Link(link.LinkProps{

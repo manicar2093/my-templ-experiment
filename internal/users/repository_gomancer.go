@@ -51,6 +51,8 @@ type PartialUpdateByIdInput struct {
 	Email     goption.Optional[string]    `json:"email" form:"email"`
 	Password  goption.Optional[string]    `json:"password" form:"password"`
 	CreatedAt goption.Optional[time.Time] `json:"created_at" form:"created_at"`
+	Status    goption.Optional[string]    `json:"status" form:"status"`
+	CanLogin  goption.Optional[bool]      `json:"can_login" form:"can_login"`
 }
 
 // PartialUpdateById can select which field has to be updated from given input
@@ -68,6 +70,12 @@ func (c *UserRepository) PartialUpdateById(changes PartialUpdateByIdInput) (*mod
 	}
 	if changes.CreatedAt.IsPresent() {
 		updates["created_at"] = changes.CreatedAt.MustGet()
+	}
+	if changes.Status.IsPresent() {
+		updates["status"] = changes.Status.MustGet()
+	}
+	if changes.CanLogin.IsPresent() {
+		updates["can_login"] = changes.CanLogin.MustGet()
 	}
 
 	if len(slices.Collect(maps.Keys(updates))) == 0 {

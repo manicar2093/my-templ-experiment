@@ -220,8 +220,8 @@ github.com/makeworld-the-better-one/dither/v2 v2.4.0 h1:Az/dYXiTcwcRSe59Hzw4RI1r
 github.com/makeworld-the-better-one/dither/v2 v2.4.0/go.mod h1:VBtN8DXO7SNtyGmLiGA7IsFeKrBkQPze1/iAeM95arc=
 github.com/manicar2093/echoroutesview v0.1.0 h1:vWp4+d/5KQ6JkKB150namAvmLya361AkuMCXhnlfPBI=
 github.com/manicar2093/echoroutesview v0.1.0/go.mod h1:9k7WGyjkrhJqo4l7fKxJF6DOqnvXt1YDsZihfyQijj8=
-github.com/manicar2093/goption v0.9.3 h1:lQza2gJWlQbvoCPxbj3ee/XMQy8oWFMTeqtz79p+VfU=
-github.com/manicar2093/goption v0.9.3/go.mod h1:X8XpUJptVbYxQDJIN+Uq52tIrkwKiL99x5eYXxm/sB8=
+github.com/manicar2093/goption v0.11.0 h1:bpjUoefm+AuV2pw9qVfHKNh6NjIDJzNv14t7YAKsXSY=
+github.com/manicar2093/goption v0.11.0/go.mod h1:X8XpUJptVbYxQDJIN+Uq52tIrkwKiL99x5eYXxm/sB8=
 github.com/manicar2093/gormpager v0.6.0 h1:IE7oojTvFzcvd2kZmUkEoGkeSdHc6E4OltQc306zu6w=
 github.com/manicar2093/gormpager v0.6.0/go.mod h1:himZgxGd5AJ9hHogk12Ep1RbwEr6LsE+um6W6HLFVnc=
 github.com/marekm4/color-extractor v1.2.1 h1:3Zb2tQsn6bITZ8MBVhc33Qn1k5/SEuZ18mrXGUqIwn0=

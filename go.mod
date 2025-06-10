@@ -19,7 +19,7 @@ require (
 	github.com/jackc/pgx/v5 v5.7.4
 	github.com/labstack/echo/v4 v4.13.3
 	github.com/manicar2093/echoroutesview v0.1.0
-	github.com/manicar2093/goption v0.9.3
+	github.com/manicar2093/goption v0.11.0
 	github.com/manicar2093/gormpager v0.6.0
 	github.com/onsi/ginkgo/v2 v2.23.4
 	github.com/onsi/gomega v1.37.0

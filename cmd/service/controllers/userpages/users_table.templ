@@ -33,6 +33,9 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 					Created at
 				}
 				@table.Head() {
+                    Can login?
+                }
+				@table.Head() {
 					{ i18n.T(ctx, "actions") }
 				}
 			}
@@ -52,6 +55,9 @@ templ UsersTable(page *gormpager.Page[models.User]) {
 						@table.Cell() {
 							{ user.CreatedAt.Local().Format(time.DateTime) } hrs
 						}
+						@table.Cell() {
+                            { user.CanLogin }
+                        }
 						@table.Cell() {
 							@button.Button(button.Props{
 								Variant: button.VariantDefault,
