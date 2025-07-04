@@ -157,16 +157,16 @@ templ UserForm(user *models.User, errors validate.Errors, props UserFormProperti
                         }
                     }
                 }
-            }
-            @form.Description() {
-                Enter status.
-            }
-            if hasStatusErrors {
-                for _,value := range errors.Field(statusKey) {
-                    @form.Message(form.MessageProps{
-                        Variant: form.MessageVariantError,
-                    }) {
-                        { value }
+                @form.Description() {
+                    Enter status.
+                }
+                if hasStatusErrors {
+                    for _,value := range errors.Field(statusKey) {
+                        @form.Message(form.MessageProps{
+                            Variant: form.MessageVariantError,
+                        }) {
+                            { value }
+                        }
                     }
                 }
             }
