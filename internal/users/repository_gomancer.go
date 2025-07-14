@@ -47,12 +47,13 @@ func (c *UserRepository) GetAllPaginated(pageNumber, pageSize int) (*gormpager.P
 }
 
 type PartialUpdateByIdInput struct {
-	Id        uuid.UUID                   `json:"id" param:"id" validate:"required_uuid"`
-	Email     goption.Optional[string]    `json:"email" form:"email"`
-	Password  goption.Optional[string]    `json:"password" form:"password"`
-	CreatedAt goption.Optional[time.Time] `json:"created_at" form:"created_at"`
-	Status    goption.Optional[string]    `json:"status" form:"status"`
-	CanLogin  goption.Optional[bool]      `json:"can_login" form:"can_login"`
+	Id          uuid.UUID                   `json:"id" param:"id" validate:"required_uuid"`
+	Email       goption.Optional[string]    `json:"email" form:"email"`
+	Password    goption.Optional[string]    `json:"password" form:"password"`
+	CreatedAt   goption.Optional[time.Time] `json:"created_at" form:"created_at"`
+	Status      goption.Optional[string]    `json:"status" form:"status"`
+	CanLogin    goption.Optional[bool]      `json:"can_login" form:"can_login"`
+	Indications goption.Optional[string]    `json:"indications" mapstructure:"indications" param:"indications" form:"indications"`
 }
 
 // PartialUpdateById can select which field has to be updated from given input
@@ -76,6 +77,9 @@ func (c *UserRepository) PartialUpdateById(changes PartialUpdateByIdInput) (*mod
 	}
 	if changes.CanLogin.IsPresent() {
 		updates["can_login"] = changes.CanLogin.MustGet()
+	}
+	if changes.Indications.IsPresent() {
+		updates["indications"] = changes.Indications.MustGet()
 	}
 
 	if len(slices.Collect(maps.Keys(updates))) == 0 {

@@ -2,6 +2,7 @@
 package controllers
 
 import (
+	"fmt"
 	"github.com/gookit/validate"
 	"github.com/invopop/ctxi18n/i18n"
 	"net/http"
@@ -45,9 +46,9 @@ func (c *UserWebController) SetUpRoutes(group *echo.Group) {
 	// Creates a user
 	userGroup.POST("", c.SaveHandler)
 	// Patch user
-	userGroup.PATCH("/:id", c.SaveHandler)
+	userGroup.PATCH("/:id", c.PartialUpdateByIdHandler)
 	// Updates all user
-	userGroup.PUT("/:id", c.PartialUpdateByIdHandler)
+	userGroup.PUT("/:id", c.SaveHandler)
 	// Deletes a user
 	userGroup.DELETE("/:id", c.DeleteByIdHandler)
 
@@ -98,6 +99,7 @@ func (c *UserWebController) PartialUpdateByIdHandler(ctx echo.Context) error {
 	if err := core.BindAndValidate(ctx, &req); err != nil {
 		return err
 	}
+	fmt.Printf("%+v", req)
 	res, err := c.userRepository.PartialUpdateById(req)
 	if err != nil {
 		return err

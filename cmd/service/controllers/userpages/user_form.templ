@@ -187,6 +187,35 @@ templ UserForm(user *models.User, errors validate.Errors, props UserFormProperti
                     {"Check if user can login."}
                 }
             }
+
+            {{ indicationsKey := "indications" }}
+            {{ hasIndicationsErrors := errors.HasField(indicationsKey) }}
+            @form.Item(form.ItemProps{}) {
+                @label.Label(label.Props{
+                    For: indicationsKey,
+                }) {
+                    Indications
+                }
+                @input.Input(input.Props{
+                    ID:       indicationsKey,
+                    Name:     indicationsKey,
+                    Type:     input.TypeText,
+                    Value:    user.Indications.GetValue(),
+                    HasError: hasIndicationsErrors,
+                })
+                @form.Description() {
+                    Enter indications
+                }
+                if hasIndicationsErrors {
+                    for _,value := range errors.Field(indicationsKey) {
+                        @form.Message(form.MessageProps{
+                            Variant: form.MessageVariantError,
+                        }) {
+                            { value }
+                        }
+                    }
+                }
+            }
 		</div>
 		@button.Button(button.Props{
 			Variant: button.VariantDefault,

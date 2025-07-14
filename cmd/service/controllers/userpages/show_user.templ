@@ -41,6 +41,12 @@ templ ShowUser(user *models.User) {
                 }
                 <p>{ user.CanLogin }</p>
             }
+             @form.Item() {
+                @label.Label() {
+                    Indications
+                }
+                <p>{ user.Indications.GetValue() }</p>
+             }
 		</div>
 
 		@link.Link(link.LinkProps{
