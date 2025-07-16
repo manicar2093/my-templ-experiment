@@ -11,6 +11,7 @@ import "github.com/gookit/validate"
 import "github.com/invopop/ctxi18n/i18n"
 import "templ-demo/core/coretpls/datetime"
 import "templ-demo/cmd/service/ui/components/toggle"
+import "templ-demo/core/coretpls/formerrors"
 
 type UserFormProperties struct {
 	Action string
@@ -44,15 +45,11 @@ templ UserForm(user *models.User, errors validate.Errors, props UserFormProperti
 				@form.Description() {
 					Enter your email address for notifications.
 				}
-				if hasEmailErrors {
-					for _,value := range errors.Field(emailKey) {
-						@form.Message(form.MessageProps{
-							Variant: form.MessageVariantError,
-						}) {
-							{ value }
-						}
-					}
-				}
+				@formerrors.FormErrors(formerrors.FormErrorsProps{
+                    HasErrors: hasEmailErrors,
+                    Errors: errors,
+                    FormItemKey: emailKey,
+                })
 			}
 			{{ passwordKey := "password" }}
 			{{ hasPasswordErrors := errors.HasField(passwordKey) }}
@@ -73,15 +70,11 @@ templ UserForm(user *models.User, errors validate.Errors, props UserFormProperti
 				@form.Description() {
 					Enter your password.
 				}
-				if hasPasswordErrors {
-					for _,value := range errors.Field(passwordKey) {
-						@form.Message(form.MessageProps{
-							Variant: form.MessageVariantError,
-						}) {
-							{ value }
-						}
-					}
-				}
+				@formerrors.FormErrors(formerrors.FormErrorsProps{
+                    HasErrors: hasPasswordErrors,
+                    Errors: errors,
+                    FormItemKey: passwordKey,
+                })
 			}
 			{{ createdAtKey := "created_at" }}
 			{{ hasCreatedAtErrors := errors.HasField(createdAtKey) }}
@@ -100,15 +93,11 @@ templ UserForm(user *models.User, errors validate.Errors, props UserFormProperti
 				@form.Description() {
 					Enter creation date.
 				}
-				if hasCreatedAtErrors {
-					for _,value := range errors.Field(createdAtKey) {
-						@form.Message(form.MessageProps{
-							Variant: form.MessageVariantError,
-						}) {
-							{ value }
-						}
-					}
-				}
+				@formerrors.FormErrors(formerrors.FormErrorsProps{
+				    HasErrors: hasCreatedAtErrors,
+				    Errors: errors,
+				    FormItemKey: createdAtKey,
+				})
 			}
 
 			{{ statusKey := "status" }}
@@ -160,15 +149,11 @@ templ UserForm(user *models.User, errors validate.Errors, props UserFormProperti
                 @form.Description() {
                     Enter status.
                 }
-                if hasStatusErrors {
-                    for _,value := range errors.Field(statusKey) {
-                        @form.Message(form.MessageProps{
-                            Variant: form.MessageVariantError,
-                        }) {
-                            { value }
-                        }
-                    }
-                }
+                @formerrors.FormErrors(formerrors.FormErrorsProps{
+                    HasErrors: hasStatusErrors,
+                    Errors: errors,
+                    FormItemKey: statusKey,
+                })
             }
 
             {{ canLoginKey := "can_login" }}
@@ -206,15 +191,11 @@ templ UserForm(user *models.User, errors validate.Errors, props UserFormProperti
                 @form.Description() {
                     Enter indications
                 }
-                if hasIndicationsErrors {
-                    for _,value := range errors.Field(indicationsKey) {
-                        @form.Message(form.MessageProps{
-                            Variant: form.MessageVariantError,
-                        }) {
-                            { value }
-                        }
-                    }
-                }
+                @formerrors.FormErrors(formerrors.FormErrorsProps{
+                    HasErrors: hasIndicationsErrors,
+                    Errors: errors,
+                    FormItemKey: indicationsKey,
+                })
             }
 		</div>
 		@button.Button(button.Props{
